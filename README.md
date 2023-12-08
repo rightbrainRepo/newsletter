@@ -2,4 +2,4 @@
 
 뉴스레터 html 코딩 내보내기 페이지
 
-link :
+link : https://rightbrainlib.github.io/newsletter/
