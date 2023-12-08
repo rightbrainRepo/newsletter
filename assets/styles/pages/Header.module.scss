@@ -1,0 +1,85 @@
+.header {
+    .toplist {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 27px 69px 22px;
+        .left {
+            height: 25px;
+            a + a {
+                margin-left: 37px;
+            }
+        }
+    }
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    .dynamic_ho {
+        position: relative;
+        height: 222px;
+        text-align: center;
+        color: #fff;
+        .iconBox {
+            position:absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            outline: 2px dotted #ffa199;
+            background-color: rgba(255, 162, 153, .1);
+            cursor: pointer;
+            
+            svg{
+                position:absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #455a64;
+                font-size: 20px;
+            }
+        }
+        img {
+            opacity: .2;
+        }
+        .info {
+            position: absolute;
+            top: 0;
+            left: 5px;
+            font-size: 11px;
+            z-index: 1;
+        }
+    }
+}
+
+.headerDialog {
+    position: relative;
+    .closeBtn {
+        position:absolute;
+        top: 7px;
+        right: 13px;
+        svg {
+            font-size: 28px;
+        }
+    }
+    .alert {
+        font-size: 14px;
+        p {
+        margin: 0 0 10px 0;
+        font-weight: 700;
+        font-size: 14px;
+        }
+
+    }
+    .input {
+        margin-top: 20px;
+    }
+    .headerBtn {
+        justify-content: end;
+        padding: 20px;
+        button {
+            width: 100px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+}

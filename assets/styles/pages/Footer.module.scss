@@ -1,0 +1,28 @@
+.footer {
+    margin-top: 70px;
+    .support {
+        margin-left: 27px;
+    }
+    .projectMail {
+        display: flex;
+        flex-direction: row;
+        margin: 48px 0 33px 27px;
+    }
+    .linkArea {
+        margin-left: 27px;
+        margin-bottom: 57px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            height: 39px;
+        }
+        .first , .second {
+            li:first-child{
+                margin-right: 75px;
+            }
+        }
+        .last li {
+            margin-left: 230px;
+        }
+    }
+}
