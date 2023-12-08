@@ -6,7 +6,7 @@ import {
   setDialogInput,
   removeDialogInput,
   setThumbWrapsCountPart1,
-  toggleLinkVisibility,
+  toggleLinkVisibility
 } from "@store/reducer/thumbInputReducer";
 import { useStoreData } from "@store/storeSelectors";
 import cx from "classnames";
@@ -18,15 +18,11 @@ const ContentUX01 = () => {
   const [dialogInfo, setDialogInfo] = useState({
     open: false,
     type: null,
-    inputIdentifier: `thumbWrap-${null}`,
+    inputIdentifier: `thumbWrap-${null}`
   });
   // thumbWraps 상태 (초기값: [1, 2])
   const [thumbWraps, setThumbWraps] = useState([1, 2]);
-  const [linkBtn, setLinkBtn] = useState({
-    wrapNumber: 1,
-    isVisible: true,
-    linkIdentifier: {},
-  });
+
   const dispatch = useDispatch();
   const dialogInputData = useStoreData().dialogInputData;
   const linkVisibility = useStoreData().linkVisibility;
@@ -44,22 +40,12 @@ const ContentUX01 = () => {
   };
 
   //ux 내 바로보기 삭제 추가
-  const removeLinkBtn = (isVisible: boolean, linkIdentifier: String) => {
-    setLinkBtn({
-      wrapNumber: 0,
-      isVisible: false,
-      linkIdentifier: linkIdentifier,
-    });
-    dispatch(toggleLinkVisibility(0, isVisible, linkIdentifier));
-  };
-
-  const addLinkBtn = (isVisible: boolean, linkIdentifier: String) => {
-    dispatch(toggleLinkVisibility(1, isVisible, linkIdentifier));
-    setLinkBtn({
-      wrapNumber: 1,
-      isVisible: true,
-      linkIdentifier: linkIdentifier,
-    });
+  const linkBtnClick = (
+    wrapNumber: number,
+    isVisible: boolean,
+    linkIdentifier: String
+  ) => {
+    dispatch(toggleLinkVisibility(wrapNumber, isVisible, linkIdentifier));
   };
 
   const renderDialogContent = () => {
@@ -89,7 +75,7 @@ const ContentUX01 = () => {
         `thumbWrap-${removedWrapNumber}-text-${removedWrapNumber}`,
         `thumbWrap-${removedWrapNumber}-subtext-${removedWrapNumber}`,
         `thumbWrap-${removedWrapNumber}-detailtext-${removedWrapNumber}`,
-        `thumbWrap-${removedWrapNumber}-link-${removedWrapNumber}`,
+        `thumbWrap-${removedWrapNumber}-link-${removedWrapNumber}`
       ];
 
       // 각 inputIdentifier에 대해 Redux 상태 업데이트
@@ -130,8 +116,7 @@ const ContentUX01 = () => {
                   className={styles.imglayer}
                   onClick={() =>
                     contDialogOpen("img", `${wrapNumber}-img-${wrapNumber}`)
-                  }
-                >
+                  }>
                   <div className={styles.iconBox}>
                     <ModeEdit />
                   </div>
@@ -158,8 +143,7 @@ const ContentUX01 = () => {
                 className={styles.imglayer}
                 onClick={() =>
                   contDialogOpen("text", `${wrapNumber}-text-${wrapNumber}`)
-                }
-              >
+                }>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -188,8 +172,7 @@ const ContentUX01 = () => {
                     "subtext",
                     `${wrapNumber}-subtext-${wrapNumber}`
                   )
-                }
-              >
+                }>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -218,8 +201,7 @@ const ContentUX01 = () => {
                     "detailtext",
                     `${wrapNumber}-detailtext-${wrapNumber}`
                   )
-                }
-              >
+                }>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -227,6 +209,7 @@ const ContentUX01 = () => {
             </div>
           </div>
           {/* 링크 영역 */}
+
           {linkVisibility[`${wrapNumber}-link-${wrapNumber}`] == false ? (
             ""
           ) : (
@@ -241,8 +224,7 @@ const ContentUX01 = () => {
                 className={styles.imglayer}
                 onClick={() =>
                   contDialogOpen("link", `${wrapNumber}-link-${wrapNumber}`)
-                }
-              >
+                }>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -251,9 +233,8 @@ const ContentUX01 = () => {
                 className={styles.linkDel}
                 variant="contained"
                 onClick={() =>
-                  removeLinkBtn(false, `${wrapNumber}-link-${wrapNumber}`)
-                }
-              >
+                  linkBtnClick(0, false, `${wrapNumber}-link-${wrapNumber}`)
+                }>
                 <Delete />
                 바로보기 삭제
               </Button>
@@ -265,9 +246,8 @@ const ContentUX01 = () => {
               variant="contained"
               fullWidth
               onClick={() =>
-                addLinkBtn(true, `${wrapNumber}-link-${wrapNumber}`)
-              }
-            >
+                linkBtnClick(1, true, `${wrapNumber}-link-${wrapNumber}`)
+              }>
               <Add />
               바로보기 추가
             </Button>
@@ -284,8 +264,7 @@ const ContentUX01 = () => {
             onClose={contDialogClose}
             title={`입력하기`}
             inputtype={dialogInfo.type}
-            inputIdentifier={`thumbWrap-${wrapNumber}-${dialogInfo.type}-${wrapNumber}`}
-          >
+            inputIdentifier={`thumbWrap-${wrapNumber}-${dialogInfo.type}-${wrapNumber}`}>
             {renderDialogContent()}
           </InputDialog>
         </div>
@@ -310,8 +289,7 @@ const ContentUX01 = () => {
           orientation="vertical"
           fullWidth
           variant="outlined"
-          className={styles.controlBtn}
-        >
+          className={styles.controlBtn}>
           {thumbWraps.length < 5 ? (
             <Button onClick={addThumbWrap}>
               <Add />글 추가

@@ -15,8 +15,6 @@ const EditHtmlCode = () => {
   const { thumbWrapsCountPart4 } = useStoreData();
   const { linkVisibility } = useStoreData();
 
-  const EmailGuide = () => {};
-
   const EmailPreview = () => {
     const previewHtml = getExportHtml(
       imagePath,
