@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "./newsletter",
+  "homepage": "https://rightbrainlib.github.io/newsletter/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
