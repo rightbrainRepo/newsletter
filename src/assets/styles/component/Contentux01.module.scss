@@ -40,6 +40,7 @@
                 min-height: 34px;
             }
             svg {
+                display: none;
                 font-size: 20px;
             }
         }
@@ -57,6 +58,7 @@
                 min-height: 30px;
             }
             svg {
+                display: none;
                 font-size: 20px;
             }
         }
@@ -76,8 +78,13 @@
                 min-height: 35px;
             }
             svg {
+                display: none;
                 font-size: 20px;
             }
+        }
+        .addLinkBtn{
+            margin-top: 10px;
+            height: 40px;
         }
 }
 .imglayer {
@@ -96,6 +103,7 @@
         color: #fff;
     }
     svg {
+        display: none;
         font-size: 20px;
         color: #455a64;
     }
@@ -116,9 +124,19 @@
     img{
         opacity: .5;
     }
+    .imglayer {
+        width: calc(100% - 170px)
+    }
+    .linkDel {
+        position: absolute;
+        top:-1px;
+        right: 5px;;
+        width: 155px;
+        height: 40px;
+    }
 }
 .controlBtn {
-    margin-top: 20px;
+    margin-top: 60px;
     button {
         height: 40px;
         font-size: 14px;

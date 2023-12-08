@@ -1,15 +1,11 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import headerReducer from "./reducer/HeaderReducer";
-import thumbControlReducer from "./reducer/thumbControlReducer";
 import thumbInputReducer from "./reducer/thumbInputReducer";
 
 // 상태 인터페이스 정의
 interface RootState {
   header: {
     imagePath: string;
-  };
-  thumbControl: {
-    thumbWraps: number[];
   };
   thumbInput: {
     parts: {
@@ -19,6 +15,7 @@ interface RootState {
       part4: number;
     };
     dialogInputData: Record<string, any>;
+    linkVisibility: Record<string, boolean>;
   };
 }
 
@@ -47,15 +44,14 @@ const saveState = (state: RootState) => {
 
 const rootReducer = combineReducers({
   header: headerReducer,
-  thumbControl: thumbControlReducer,
-  thumbInput: thumbInputReducer
+  thumbInput: thumbInputReducer,
 });
 
 const persistedState = loadState();
 
 const store = configureStore({
   reducer: rootReducer,
-  preloadedState: persistedState
+  preloadedState: persistedState,
 });
 
 store.subscribe(() => {

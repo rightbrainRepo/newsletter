@@ -38,6 +38,7 @@
                 height: auto;
             }
             svg {
+                display: none;
                 font-size: 20px;
             }
         }
@@ -55,6 +56,7 @@
                 min-height: 30px;
             }
             svg {
+                display: none;
                 font-size: 20px;
             }
         }
@@ -74,6 +76,7 @@
                 min-height: 35px;
             }
             svg {
+                display: none;
                 font-size: 20px;
             }
         }
@@ -131,6 +134,7 @@
         color: #fff;
     }
     svg {
+        display: none;
         font-size: 20px;
         color: #455a64;
     }

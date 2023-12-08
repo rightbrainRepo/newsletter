@@ -2,9 +2,6 @@ export interface RootState {
   header: {
     imagePath: string;
   };
-  thumbControl: {
-    thumbWraps: ThumbWrapType[];
-  };
   thumbInput: {
     parts: {
       part1: number;
@@ -13,6 +10,7 @@ export interface RootState {
       part4: number;
     };
     dialogInputData: Record<string, string>;
+    linkVisibility: Record<string, boolean>;
   };
 }
 
@@ -23,7 +21,7 @@ export const SET_THUMB_WRAPS_COUNT_PART2 = "SET_THUMB_WRAPS_COUNT_PART2";
 export const SET_THUMB_WRAPS_COUNT_PART3 = "SET_THUMB_WRAPS_COUNT_PART3";
 export const SET_THUMB_WRAPS_COUNT_PART4 = "SET_THUMB_WRAPS_COUNT_PART4";
 export const SET_DIALOG_INPUT_DATA = "SET_DIALOG_INPUT_DATA";
-export const SET_THUMB_WRAPS = "SET_THUMB_WRAPS";
+export const TOGGLE_LINK_VISIBILITY = "TOGGLE_LINK_VISIBILITY";
 
 export interface SetImagePathAction {
   type: typeof SET_IMAGE_PATH;
@@ -55,9 +53,10 @@ export interface SetDialogInputDataAction {
   payload: dialogInputData;
 }
 
-export interface SetThumbWrapsAction {
-  type: typeof SET_THUMB_WRAPS;
-  payload: ThumbWrapType;
+export interface ToggleLinkVisibilityAction {
+  type: typeof TOGGLE_LINK_VISIBILITY;
+  payload: { wrapNumber: number; isVisible: boolean; linkIdentifier: string };
 }
+
 export type dialogInputData = Record<string, string>;
-export type ThumbWrapType = ThumbWrapType[];
+export type ThumbInputActionTypes = ToggleLinkVisibilityAction;

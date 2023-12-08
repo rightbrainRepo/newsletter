@@ -13,6 +13,9 @@ const EditHtmlCode = () => {
   const { thumbWrapsCountPart2 } = useStoreData();
   const { thumbWrapsCountPart3 } = useStoreData();
   const { thumbWrapsCountPart4 } = useStoreData();
+  const { linkVisibility } = useStoreData();
+
+  const EmailGuide = () => {};
 
   const EmailPreview = () => {
     const previewHtml = getExportHtml(
@@ -21,7 +24,8 @@ const EditHtmlCode = () => {
       thumbWrapsCountPart1,
       thumbWrapsCountPart2,
       thumbWrapsCountPart3,
-      thumbWrapsCountPart4
+      thumbWrapsCountPart4,
+      linkVisibility
     );
     const previewWindow = window.open("", "_blank");
     if (previewWindow) {
@@ -37,7 +41,8 @@ const EditHtmlCode = () => {
       thumbWrapsCountPart1,
       thumbWrapsCountPart2,
       thumbWrapsCountPart3,
-      thumbWrapsCountPart4
+      thumbWrapsCountPart4,
+      linkVisibility
     );
     //뉴스레터 html 다운로드
     const blob = new Blob([htmlContent.props.children], { type: "text/html" });
@@ -55,9 +60,9 @@ const EditHtmlCode = () => {
     <>
       <div className={styles.wrap}>
         <div className={styles.topBtn}>
-          <Button color="error" variant="outlined">
+          {/* <Button color="error" variant="outlined" onClick={EmailGuide}>
             Guide
-          </Button>
+          </Button> */}
           <div>
             <Button color="error" variant="outlined" onClick={EmailPreview}>
               Preview
