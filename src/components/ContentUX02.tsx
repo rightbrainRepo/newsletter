@@ -207,7 +207,8 @@ const ContentUX02 = () => {
             </div>
           </div>
           {/* 링크 영역 */}
-          {linkVisibility[`${wrapNumber}-link-${wrapNumber}`] == false ? (
+          {linkVisibility[`thumbWrap02-${wrapNumber}-link-${wrapNumber}`] ==
+          false ? (
             ""
           ) : (
             <div className={cx(styles.thumbBox, styles.thumb_link)}>
@@ -230,20 +231,29 @@ const ContentUX02 = () => {
                 className={styles.linkDel}
                 variant="contained"
                 onClick={() =>
-                  linkBtnClick(0, false, `${wrapNumber}-link-${wrapNumber}`)
+                  linkBtnClick(
+                    0,
+                    false,
+                    `thumbWrap02-${wrapNumber}-link-${wrapNumber}`
+                  )
                 }>
                 <Delete />
                 바로보기 삭제
               </Button>
             </div>
           )}
-          {linkVisibility[`${wrapNumber}-link-${wrapNumber}`] == false ? (
+          {linkVisibility[`thumbWrap02-${wrapNumber}-link-${wrapNumber}`] ==
+          false ? (
             <Button
               className={styles.addLinkBtn}
               variant="contained"
               fullWidth
               onClick={() =>
-                linkBtnClick(1, true, `${wrapNumber}-link-${wrapNumber}`)
+                linkBtnClick(
+                  1,
+                  true,
+                  `thumbWrap02-${wrapNumber}-link-${wrapNumber}`
+                )
               }>
               <Add />
               바로보기 추가

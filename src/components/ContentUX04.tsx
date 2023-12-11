@@ -208,7 +208,8 @@ const ContentUX04 = () => {
             </div>
           </div>
           {/* 링크 영역 */}
-          {linkVisibility[`${wrapNumber}-link-${wrapNumber}`] == false ? (
+          {linkVisibility[`thumbWrap04-${wrapNumber}-link-${wrapNumber}`] ==
+          false ? (
             ""
           ) : (
             <div className={cx(styles.thumbBox, styles.thumb_link)}>
@@ -238,7 +239,8 @@ const ContentUX04 = () => {
               </Button>
             </div>
           )}
-          {linkVisibility[`${wrapNumber}-link-${wrapNumber}`] == false ? (
+          {linkVisibility[`thumbWrap04-${wrapNumber}-link-${wrapNumber}`] ==
+          false ? (
             <Button
               className={styles.addLinkBtn}
               variant="contained"
