@@ -115,11 +115,6 @@ const thumbInputReducer = (
         ...state,
         parts: { ...state.parts, partAdd: action.payload }
       };
-    case "SET_THUMB_WRAPS_COUNT_PARTADD":
-      return {
-        ...state,
-        parts: { ...state.parts, partAdd: action.payload }
-      };
     case "SET_THUMB_WRAPS_ADD_COUNT":
       return {
         ...state,
