@@ -21,7 +21,7 @@ const ContentUX04 = () => {
     inputIdentifier: `thumbWrap04-${null}`
   });
   // thumbWraps 상태 (초기값: [1, 2])
-  const [thumbWraps, setThumbWraps] = useState([1, 2]);
+  const [thumbWraps, setThumbWraps] = useState([1]);
 
   const dispatch = useDispatch();
   const dialogInputData = useStoreData().dialogInputData;
@@ -293,16 +293,14 @@ const ContentUX04 = () => {
           className={styles.controlBtn}>
           {thumbWraps.length < 5 ? (
             <Button onClick={addThumbWrap}>
-              <Add />
-              추가
+              <Add />글 추가
             </Button>
           ) : (
             ""
           )}
-          {thumbWraps.length > 2 ? (
+          {thumbWraps.length > 1 ? (
             <Button onClick={removeThumbWrap}>
-              <Delete />
-              삭제
+              <Delete />글 삭제
             </Button>
           ) : (
             ""

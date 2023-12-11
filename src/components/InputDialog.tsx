@@ -55,6 +55,10 @@ const InputDialog: React.FC<InputDialogProps> = ({
         return "텍스트 입력";
       case "link":
         return "링크 입력";
+      case "title":
+        return "이미지 경로";
+      case "title02":
+        return "이미지 경로";
       default:
         return "입력";
     }
@@ -102,6 +106,42 @@ const InputDialog: React.FC<InputDialogProps> = ({
             <ul className={styles.list}>
               <li>
                 이미지 크기 : (660 X 275)<span>(*필수)</span>
+              </li>
+              <li>
+                확장자 : JPG<span>(*필수)</span>
+              </li>
+              <li>
+                사이즈 맞지 않는 경우, 화면이 틀어질 수 있으며 확장자가 맞지
+                않는 경우, 이메일 용량이 커져 스팸메일로 분류될 수 있습니다.
+              </li>
+            </ul>
+          </Alert>
+        </>
+      ) : inputtype == "title" ? (
+        <>
+          <Alert severity="error" className={styles.alert}>
+            <p>이미지 확인 사항</p>
+            <ul className={styles.list}>
+              <li>
+                이미지 크기 : (660 X 75)<span>(*필수)</span>
+              </li>
+              <li>
+                확장자 : JPG<span>(*필수)</span>
+              </li>
+              <li>
+                사이즈 맞지 않는 경우, 화면이 틀어질 수 있으며 확장자가 맞지
+                않는 경우, 이메일 용량이 커져 스팸메일로 분류될 수 있습니다.
+              </li>
+            </ul>
+          </Alert>
+        </>
+      ) : inputtype == "title02" ? (
+        <>
+          <Alert severity="error" className={styles.alert}>
+            <p>이미지 확인 사항</p>
+            <ul className={styles.list}>
+              <li>
+                이미지 크기 : (660 X 125)<span>(*필수)</span>
               </li>
               <li>
                 확장자 : JPG<span>(*필수)</span>

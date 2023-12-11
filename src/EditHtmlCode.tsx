@@ -13,6 +13,8 @@ const EditHtmlCode = () => {
   const { thumbWrapsCountPart2 } = useStoreData();
   const { thumbWrapsCountPart3 } = useStoreData();
   const { thumbWrapsCountPart4 } = useStoreData();
+  const { thumbWrapsCountPartAdd } = useStoreData();
+  const { thumbWrapsAddCount } = useStoreData();
   const { linkVisibility } = useStoreData();
 
   const EmailPreview = () => {
@@ -23,6 +25,8 @@ const EditHtmlCode = () => {
       thumbWrapsCountPart2,
       thumbWrapsCountPart3,
       thumbWrapsCountPart4,
+      thumbWrapsCountPartAdd,
+      thumbWrapsAddCount,
       linkVisibility
     );
     const previewWindow = window.open("", "_blank");
@@ -40,6 +44,8 @@ const EditHtmlCode = () => {
       thumbWrapsCountPart2,
       thumbWrapsCountPart3,
       thumbWrapsCountPart4,
+      thumbWrapsCountPartAdd,
+      thumbWrapsAddCount,
       linkVisibility
     );
     //뉴스레터 html 다운로드

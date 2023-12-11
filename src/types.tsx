@@ -8,6 +8,8 @@ export interface RootState {
       part2: number;
       part3: number;
       part4: number;
+      partAdd: number;
+      isvisible: boolean;
     };
     dialogInputData: Record<string, string>;
     linkVisibility: Record<string, boolean>;
@@ -20,6 +22,8 @@ export const SET_THUMB_WRAPS_COUNT_PART1 = "SET_THUMB_WRAPS_COUNT_PART1";
 export const SET_THUMB_WRAPS_COUNT_PART2 = "SET_THUMB_WRAPS_COUNT_PART2";
 export const SET_THUMB_WRAPS_COUNT_PART3 = "SET_THUMB_WRAPS_COUNT_PART3";
 export const SET_THUMB_WRAPS_COUNT_PART4 = "SET_THUMB_WRAPS_COUNT_PART4";
+export const SET_THUMB_WRAPS_COUNT_PARTADD = "SET_THUMB_WRAPS_COUNT_PARTADD";
+export const SET_THUMB_WRAPS_ADD_COUNT = "SET_THUMB_WRAPS_ADD_COUNT";
 export const SET_DIALOG_INPUT_DATA = "SET_DIALOG_INPUT_DATA";
 export const TOGGLE_LINK_VISIBILITY = "TOGGLE_LINK_VISIBILITY";
 
@@ -47,6 +51,14 @@ export interface setThumbWrapsCountPart3Action {
 export interface setThumbWrapsCountPart4Action {
   type: typeof SET_THUMB_WRAPS_COUNT_PART4;
   payload: number;
+}
+export interface setThumbWrapsCountPartAddAction {
+  type: typeof SET_THUMB_WRAPS_COUNT_PARTADD;
+  payload: number;
+}
+export interface setThumbWrapsAddCountAction {
+  type: typeof SET_THUMB_WRAPS_ADD_COUNT;
+  payload: boolean;
 }
 export interface SetDialogInputDataAction {
   type: typeof SET_DIALOG_INPUT_DATA;

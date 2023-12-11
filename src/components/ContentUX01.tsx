@@ -285,17 +285,41 @@ const ContentUX01 = () => {
       <div className={cx(styles.thumb01_Wrap, styles.cate_Wrap)}>
         <div className={styles.thumbW01_title}>
           <img
-            src="https://lh3.googleusercontent.com/pw/ADCreHeP3mndOi5G4cff2B0nvhSAC9Gzjq1sA8R24PkwMMiMXa-ZWKxzq1GcgboWRNLxlNltzUA23kyN8FE0106bS7vZPjBBS07e76a69WKrb0OLqtSZwXytWgqkGpgVnUNWLPV94FzmaxXhQw_fQQ-KWysc=w660-h75-s-no-gm?authuser=1"
+            src={
+              dialogInputData[dialogInfo.inputIdentifier] &&
+              `thumbWrap-1-title-1` === dialogInfo.inputIdentifier
+                ? dialogInputData[dialogInfo.inputIdentifier]
+                : dialogInputData[`thumbWrap-1-title-1`]
+                  ? dialogInputData[`thumbWrap-1-title-1`]
+                  : "https://lh3.googleusercontent.com/pw/ADCreHeP3mndOi5G4cff2B0nvhSAC9Gzjq1sA8R24PkwMMiMXa-ZWKxzq1GcgboWRNLxlNltzUA23kyN8FE0106bS7vZPjBBS07e76a69WKrb0OLqtSZwXytWgqkGpgVnUNWLPV94FzmaxXhQw_fQQ-KWysc=w660-h75-s-no-gm?authuser=1"
+            }
             width="660"
             height="75"
             alt=""
           />
+          <div
+            className={styles.imglayer}
+            onClick={() => contDialogOpen("title", `1-title-1`)}>
+            <div className={styles.iconBox}>
+              <ModeEdit />
+            </div>
+          </div>
+          <InputDialog
+            open={
+              dialogInfo.open &&
+              dialogInfo.inputIdentifier == `thumbWrap-1-title-1`
+            }
+            onClose={contDialogClose}
+            title={`입력하기`}
+            inputtype={dialogInfo.type}
+            inputIdentifier={`thumbWrap-1-title-1`}>
+            {renderDialogContent()}
+          </InputDialog>
         </div>
         {renderThumbWraps()}
         {/* 버튼 영역 */}
         <ButtonGroup
           orientation="vertical"
-          fullWidth
           variant="outlined"
           className={styles.controlBtn}>
           {thumbWraps.length < 5 ? (

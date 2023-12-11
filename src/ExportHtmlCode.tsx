@@ -5,11 +5,12 @@ const ExportHtmlCode = (
   thumbWrapsCountPart2: number,
   thumbWrapsCountPart3: number,
   thumbWrapsCountPart4: number,
+  thumbWrapsCountPartAdd: number,
+  thumbWrapsAddCount: boolean,
   linkVisibility: any
 ) => {
   //part1 code
   const renderThumbWraps = () => {
-    console.log(linkVisibility);
     let thumbWrapsHtml = "";
     for (let i = 0; i < thumbWrapsCountPart1; i++) {
       thumbWrapsHtml += `
@@ -244,13 +245,13 @@ const ExportHtmlCode = (
       "29cm – UX/UI 개선",
       "토스 모바일앱 – UX/UI 개선",
       "이마트몰 – UX/UI 개선",
-      "배달의민족 – UX/UI 개선",
+      "배달의민족 – UX/UI 개선"
     ];
     const listLink = [
       "https://blog.rightbrain.co.kr/?p=15044",
       "https://blog.rightbrain.co.kr/?p=15021",
       "https://blog.rightbrain.co.kr/?p=14899",
-      "https://blog.rightbrain.co.kr/?p=14886",
+      "https://blog.rightbrain.co.kr/?p=14886"
     ];
     for (let i = 0; i < thumbWrapsCountPart3; i++) {
       thumbWrapsHtml += `
@@ -408,6 +409,100 @@ const ExportHtmlCode = (
     }
     return thumbWrapsHtml;
   };
+
+  //addpart
+  const renderThumbWrapsAdd = () => {
+    let thumbWrapsHtml = "";
+    for (let i = 0; i < thumbWrapsCountPartAdd; i++) {
+      thumbWrapsHtml += `
+            <tr>
+              <td style="vertical-align:top;">
+                  <img src=${
+                    dialogInputData[`addThumbWrap-${i + 1}-img-${i + 1}`]
+                      ? dialogInputData[`addThumbWrap-${i + 1}-img-${i + 1}`]
+                      : "https://lh3.googleusercontent.com/pw/ADCreHex2IScRlsVI9Ch3gPWPZJMyF2Wv796SlS0XKAEafxx33EgmJvtbk7XifWUVjxEv1hqFnOokXV4-7-u6jr6A2QTPOM2kVttf4VtIJRH1V_B2YFEB-ve75M7YjE5pYH8floIGl_UKnSpymhdxPq_rDjp=w660-h275-s-no-gm?authuser=1"
+                  }
+                  width="660" height="275" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;"
+                   />
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top;">
+                  <div style="margin:0;margin-top: 30px;margin-right: 60px;margin-left: 27px;margin-bottom: 6px;font-family: '맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 18px;font-weight: bold;">
+                  ${
+                    dialogInputData[`addThumbWrap-${i + 1}-text-${i + 1}`]
+                      ? dialogInputData[`addThumbWrap-${i + 1}-text-${i + 1}`]
+                      : "슈퍼앱 : 하나의 앱에서 모든 서비스를"
+                  }
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top;">
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">${
+                    dialogInputData[`addThumbWrap-${i + 1}-subtext-${i + 1}`]
+                      ? dialogInputData[
+                          `addThumbWrap-${i + 1}-subtext-${i + 1}`
+                        ]
+                      : "App Review"
+                  }</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top;">
+                  <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:15px;line-height: 26px;">
+                  ${
+                    dialogInputData[`addThumbWrap-${i + 1}-detailtext-${i + 1}`]
+                      ? dialogInputData[
+                          `addThumbWrap-${i + 1}-detailtext-${i + 1}`
+                        ]
+                      : "슈퍼앱은 혁신적인 개념으로, 다양한 서비스를 하나의 플랫폼 또는 앱 내에서 통합하여 제공합니다. 이번 글에서는 슈퍼앱의 개념과 특징, 국내외 주요 슈퍼앱들의 사례를 알아보겠습니다."
+                  }      
+                  </div>
+              </td>
+           </tr>
+           <tr style="${
+             linkVisibility[`${i + 1}-link-${i + 1}`] == false
+               ? "display:none;"
+               : ""
+           }">
+            <!--link button-->
+            <td style="vertical-align:top;">
+                <table width="660" height="34" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+                    <tr>
+                        <td style="vertical-align:top;">
+                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcpBcC_XEAGF9W9oB2van5vtAcc7DbqJ2FBm607JW0ogEFSiPubErWeP2KwqBAaW18JYaHCTuX7KF799xWma2YwJPYEFFZkqXY6i1P7RBgErinXzU9NqBxjI8fKpcOimYsjwBI-jNBEBiWH_T0j9SjA=w26-h26-s-no-gm?authuser=1" width="15" height="34" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                        </td>
+                        <td style="vertical-align:top;">
+                            <a href=${
+                              dialogInputData[
+                                `addThumbWrap-${i + 1}-link-${i + 1}`
+                              ]
+                                ? dialogInputData[
+                                    `addThumbWrap-${i + 1}-link-${i + 1}`
+                                  ]
+                                : "https://blog.rightbrain.co.kr/?p=14969"
+                            }
+                             target="_blank"><img src="https://lh3.googleusercontent.com/pw/ADCreHdXV0BXbMelcz8VPxR7hroFC-hwctmbRi3oS52lgwaMps4dBK24FKmJbTutRTMIMYsG0ghj_vxil1kaoqUSzeeN8yJaa4IpnM1df-OVK-iqY0Te-qRhMKbYhuzjLGkkwzAcpb0JFISLyLc_9LMAfffn=w82-h34-s-no-gm?authuser=1" width="82" height="34" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
+                        </td>
+                        <td style="vertical-align:top;">
+                            <img src="https://lh3.googleusercontent.com/pw/ADCreHfTzFbto5XrG8NTekRjlqi_eHXJzdtXIU0i_so5Yyp7vc6Y1hNiEN2QgGb9cEm9OopqU4EWFuVyUxr2_m7jzduG6lq9lY_4V6mW_Lx7b3dPICyyjNsfhRPR_u-awFKHTlDgNNqbkxh8_gvrp1ZPCDhK=w551-h36-s-no-gm?authuser=1" width="551" height="34" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <!--//link button-->
+        </tr>
+        <tr>
+            <td style="vertical-align:top;">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHcoWEawOSTThj_8XEw3riAWm1j1s4HfDTKlcQm8AlcXa65gkku7J44Pn7hir-QO7BIxO7yXMzrJfA_ydilrj39901FwoqhnYilKFGrz6CmqVe5vMUyRQjnit4mK5DP3ddoA85xL8ycUdmVn9_tWFI2b=w660-h70-s-no-gm?authuser=1" width="660" height="70" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+            </td>
+        </tr>
+           `;
+    }
+    return thumbWrapsHtml;
+  };
+
   //html all code
   const getExportHtml = () => {
     return `
@@ -492,17 +587,44 @@ const ExportHtmlCode = (
                   <tr>
                     <td style="vertical-align:top;">
                         <!-- ux design insigt title// -->
-                        <img src="https://lh3.googleusercontent.com/pw/ADCreHeP3mndOi5G4cff2B0nvhSAC9Gzjq1sA8R24PkwMMiMXa-ZWKxzq1GcgboWRNLxlNltzUA23kyN8FE0106bS7vZPjBBS07e76a69WKrb0OLqtSZwXytWgqkGpgVnUNWLPV94FzmaxXhQw_fQQ-KWysc=w660-h75-s-no-gm?authuser=1" width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                        <img src=
+                        ${
+                          dialogInputData[`thumbWrap-1-title-1`]
+                            ? dialogInputData[`thumbWrap-1-title-1`]
+                            : "https://lh3.googleusercontent.com/pw/ADCreHeP3mndOi5G4cff2B0nvhSAC9Gzjq1sA8R24PkwMMiMXa-ZWKxzq1GcgboWRNLxlNltzUA23kyN8FE0106bS7vZPjBBS07e76a69WKrb0OLqtSZwXytWgqkGpgVnUNWLPV94FzmaxXhQw_fQQ-KWysc=w660-h75-s-no-gm?authuser=1"
+                        }
+                         width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                     </td>
                  </tr>
                   ${renderThumbWraps()}
                   <tr>
                     <td style="vertical-align:top;">
                         <!--special review title// -->
-                        <img src="https://lh3.googleusercontent.com/pw/ADCreHeiaYOn5hRewAHiehlsooUi7e5lNqKq8YlswO-jZhpIZKX_Pg8u4D10PNimm1RIdhfVRLE3YkVJGfO0efu80JkbLErR-myWirFJNnJdCW-Ab4RsDi9s4jvCrYekr3wevoBosROxK5OBivZCkconMgIM=w660-h124-s-no-gm?authuser=1" width="660" height="125" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                        <img src=${
+                          dialogInputData[`thumbWrap02-1-title-1`]
+                            ? dialogInputData[`thumbWrap02-1-title-1`]
+                            : "https://lh3.googleusercontent.com/pw/ADCreHeiaYOn5hRewAHiehlsooUi7e5lNqKq8YlswO-jZhpIZKX_Pg8u4D10PNimm1RIdhfVRLE3YkVJGfO0efu80JkbLErR-myWirFJNnJdCW-Ab4RsDi9s4jvCrYekr3wevoBosROxK5OBivZCkconMgIM=w660-h124-s-no-gm?authuser=1"
+                        }
+                         width="660" height="125" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                     </td>
                   </tr>
                   ${renderThumbWraps02()}
+                  ${
+                    thumbWrapsAddCount
+                      ? `<tr>
+                  <td style="vertical-align:top;">
+                      <!--special review title// -->
+                      <img src=${
+                        dialogInputData[`addThumbWrap-1-title-1`]
+                          ? dialogInputData[`addThumbWrap-1-title-1`]
+                          : "https://lh3.googleusercontent.com/pw/ADCreHeiaYOn5hRewAHiehlsooUi7e5lNqKq8YlswO-jZhpIZKX_Pg8u4D10PNimm1RIdhfVRLE3YkVJGfO0efu80JkbLErR-myWirFJNnJdCW-Ab4RsDi9s4jvCrYekr3wevoBosROxK5OBivZCkconMgIM=w660-h124-s-no-gm?authuser=1"
+                      }
+                       width="660" height="125" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                  </td>
+                </tr>`
+                      : ""
+                  }
+                  ${thumbWrapsAddCount ? renderThumbWrapsAdd() : ""}
                   <tr>
                     <td style="vertical-align:top;">
                         <!--ux academy title// -->

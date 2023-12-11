@@ -13,6 +13,8 @@ interface RootState {
       part2: number;
       part3: number;
       part4: number;
+      partAdd: number;
+      isvisible: boolean;
     };
     dialogInputData: Record<string, any>;
     linkVisibility: Record<string, boolean>;
@@ -44,14 +46,14 @@ const saveState = (state: RootState) => {
 
 const rootReducer = combineReducers({
   header: headerReducer,
-  thumbInput: thumbInputReducer,
+  thumbInput: thumbInputReducer
 });
 
 const persistedState = loadState();
 
 const store = configureStore({
   reducer: rootReducer,
-  preloadedState: persistedState,
+  preloadedState: persistedState
 });
 
 store.subscribe(() => {

@@ -18,6 +18,13 @@ export const useStoreData = () => {
   const thumbWrapsCountPart4 = useSelector(
     (state: RootState) => state.thumbInput.parts.part4
   );
+  const thumbWrapsCountPartAdd = useSelector(
+    (state: RootState) => state.thumbInput.parts.partAdd
+  );
+
+  const thumbWrapsAddCount = useSelector(
+    (state: RootState) => state.thumbInput.parts.isvisible
+  );
 
   const linkVisibility = useSelector(
     (state: RootState) => state.thumbInput.linkVisibility
@@ -29,7 +36,9 @@ export const useStoreData = () => {
     thumbWrapsCountPart2,
     thumbWrapsCountPart3,
     thumbWrapsCountPart4,
+    thumbWrapsCountPartAdd,
+    thumbWrapsAddCount,
     dialogInputData,
-    linkVisibility,
+    linkVisibility
   };
 };

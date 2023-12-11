@@ -7,7 +7,7 @@
         position:relative;
         .imglayer {
             top: -6px;
-            height: 75px;
+            height: 125px;
         }
     }
     .thumbW02_title{
@@ -100,6 +100,7 @@
             height: 40px;
         }
 }
+
 .imglayer {
     position: absolute;
     top:0;
@@ -128,6 +129,7 @@
         z-index: 1;
     }
 }
+
 .thumb_link {
     position: relative;
     padding-left: 27px;
@@ -157,5 +159,24 @@
         height: 40px;
         font-size: 14px;
         font-weight: 700;
+    }
+}
+
+[class~="MuiButtonGroup-root"]{
+    &.addBtnGroup {
+        border-top: 1px solid #ddd;
+        flex-direction: row;
+        margin: 100px 0 0 0;
+        padding-top: 30px;
+        width: 100%;
+        justify-content: center;
+        button {
+            height: 40px;
+        }
+        .btnText {
+            margin: 0 50px;
+            font-weight: 700;
+            line-height: 34px;
+        }
     }
 }
