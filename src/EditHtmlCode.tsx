@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Button } from "@mui/material";
 import { useStoreData } from "@store/storeSelectors";
 import Header from "@pages/Header";
 import Content from "@pages/Content";
 import Footer from "@pages/Footer";
+import Guide from "@pages/Guide";
 import getExportHtml from "./ExportHtmlCode";
 import styles from "@styles/EditHtmlCode.module.scss";
 
@@ -16,6 +18,16 @@ const EditHtmlCode = () => {
   const { thumbWrapsCountPartAdd } = useStoreData();
   const { thumbWrapsAddCount } = useStoreData();
   const { linkVisibility } = useStoreData();
+
+  const [guideOpen, setGuideOpen] = useState(false);
+
+  const GuideClick = () => {
+    if (!guideOpen) {
+      setGuideOpen(true);
+    } else {
+      setGuideOpen(false);
+    }
+  };
 
   const EmailPreview = () => {
     const previewHtml = getExportHtml(
@@ -64,9 +76,9 @@ const EditHtmlCode = () => {
     <>
       <div className={styles.wrap}>
         <div className={styles.topBtn}>
-          {/* <Button color="error" variant="outlined" onClick={EmailGuide}>
+          <Button color="error" variant="outlined" onClick={GuideClick}>
             Guide
-          </Button> */}
+          </Button>
           <div>
             <Button color="error" variant="outlined" onClick={EmailPreview}>
               Preview
@@ -82,6 +94,7 @@ const EditHtmlCode = () => {
           <Footer />
         </div>
       </div>
+      {guideOpen ? <Guide /> : ""}
     </>
   );
 };
