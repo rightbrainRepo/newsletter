@@ -222,7 +222,10 @@ const ContentUX04 = () => {
               <div
                 className={styles.imglayer}
                 onClick={() =>
-                  contDialogOpen("link", `${wrapNumber}-link-${wrapNumber}`)
+                  contDialogOpen(
+                    "link",
+                    `thumbWrap04-${wrapNumber}-link-${wrapNumber}`
+                  )
                 }>
                 <div className={styles.iconBox}>
                   <ModeEdit />
@@ -232,7 +235,11 @@ const ContentUX04 = () => {
                 className={styles.linkDel}
                 variant="contained"
                 onClick={() =>
-                  linkBtnClick(0, false, `${wrapNumber}-link-${wrapNumber}`)
+                  linkBtnClick(
+                    0,
+                    false,
+                    `thumbWrap04-${wrapNumber}-link-${wrapNumber}`
+                  )
                 }>
                 <Delete />
                 바로보기 삭제
@@ -246,7 +253,11 @@ const ContentUX04 = () => {
               variant="contained"
               fullWidth
               onClick={() =>
-                linkBtnClick(1, true, `${wrapNumber}-link-${wrapNumber}`)
+                linkBtnClick(
+                  1,
+                  true,
+                  `thumbWrap04-${wrapNumber}-link-${wrapNumber}`
+                )
               }>
               <Add />
               바로보기 추가

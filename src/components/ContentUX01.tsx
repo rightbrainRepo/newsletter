@@ -209,7 +209,8 @@ const ContentUX01 = () => {
             </div>
           </div>
           {/* 링크 영역 */}
-          {linkVisibility[`${wrapNumber}-link-${wrapNumber}`] == false ? (
+          {linkVisibility[`thumbWrap-${wrapNumber}-link-${wrapNumber}`] ==
+          false ? (
             ""
           ) : (
             <div className={cx(styles.thumbBox, styles.thumb_link)}>

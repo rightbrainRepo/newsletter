@@ -61,7 +61,7 @@ const ExportHtmlCode = (
               </td>
            </tr>
            <tr style="${
-             linkVisibility[`${i + 1}-link-${i + 1}`] == false
+             linkVisibility[`thumbWrap-${i + 1}-link-${i + 1}`] == false
                ? "display:none;"
                : ""
            }">
@@ -151,7 +151,7 @@ const ExportHtmlCode = (
               </td>
            </tr>
            <tr style="${
-             linkVisibility[`${i + 1}-link-${i + 1}`] == false
+             linkVisibility[`thumbWrap02-${i + 1}-link-${i + 1}`] == false
                ? "display:none;"
                : ""
            }">
@@ -369,7 +369,7 @@ const ExportHtmlCode = (
               </td>
            </tr>
            <tr style="${
-             linkVisibility[`${i + 1}-link-${i + 1}`] == false
+             linkVisibility[`thumbWrap04-${i + 1}-link-${i + 1}`] == false
                ? "display:none;"
                : ""
            }">
@@ -462,7 +462,7 @@ const ExportHtmlCode = (
               </td>
            </tr>
            <tr style="${
-             linkVisibility[`${i + 1}-link-${i + 1}`] == false
+             linkVisibility[`addThumbWrap-${i + 1}-link-${i + 1}`] == false
                ? "display:none;"
                : ""
            }">
