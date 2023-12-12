@@ -245,7 +245,8 @@ const ExportHtmlCode = (
       "29cm – UX/UI 개선",
       "토스 모바일앱 – UX/UI 개선",
       "이마트몰 – UX/UI 개선",
-      "배달의민족 – UX/UI 개선"
+      "배달의민족 – UX/UI 개선",
+      "프로젝트명"
     ];
     const listLink = [
       "https://blog.rightbrain.co.kr/?p=15044",

@@ -51,6 +51,7 @@ const Guide: React.FC<InputModalProps> = ({ open, onClose }) => {
               타이틀 아래에 있는 글들은 이미지+타이틀+서브타이틀+상세글+링크
               되어있으며 최소 2개, 최대 5개까지 가능, 링크는 1개 또는 삭제 가능
             </li>
+            <li>입력하지 않으면 기존 입력된 47호가 preview, export 보여짐</li>
           </ul>
         </div>
       </Modal>

@@ -63,7 +63,7 @@ const ContentUX04 = () => {
   };
 
   const removeThumbWrap = () => {
-    if (thumbWraps.length > 2) {
+    if (thumbWraps.length > 1) {
       const updatedThumbWraps = thumbWraps.slice(0, -1);
 
       setThumbWraps(updatedThumbWraps);
@@ -82,6 +82,8 @@ const ContentUX04 = () => {
       removedInputIdentifiers.forEach((inputIdentifier) => {
         dispatch(removeDialogInput(inputIdentifier));
       });
+
+      dispatch(setThumbWrapsCountPart4(thumbWraps.length - 1));
     }
   };
 
