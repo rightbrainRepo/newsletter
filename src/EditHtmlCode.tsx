@@ -1,14 +1,16 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@mui/material";
 import { useStoreData } from "@store/storeSelectors";
+import Guide from "@pages/Guide";
 import Header from "@pages/Header";
 import Content from "@pages/Content";
 import Footer from "@pages/Footer";
-import Guide from "@pages/Guide";
 import getExportHtml from "./ExportHtmlCode";
+
 import styles from "@styles/EditHtmlCode.module.scss";
 
 const EditHtmlCode = () => {
+  const [open, setOpen] = React.useState(false);
   const { imagePath } = useStoreData();
   const { dialogInputData } = useStoreData();
   const { thumbWrapsCountPart1 } = useStoreData();
@@ -19,14 +21,12 @@ const EditHtmlCode = () => {
   const { thumbWrapsAddCount } = useStoreData();
   const { linkVisibility } = useStoreData();
 
-  const [guideOpen, setGuideOpen] = useState(false);
+  const GuideOpenClick = () => {
+    setOpen(true);
+  };
 
-  const GuideClick = () => {
-    if (!guideOpen) {
-      setGuideOpen(true);
-    } else {
-      setGuideOpen(false);
-    }
+  const GuideCloseClick = () => {
+    setOpen(false);
   };
 
   const EmailPreview = () => {
@@ -76,7 +76,7 @@ const EditHtmlCode = () => {
     <>
       <div className={styles.wrap}>
         <div className={styles.topBtn}>
-          <Button color="error" variant="outlined" onClick={GuideClick}>
+          <Button color="error" variant="outlined" onClick={GuideOpenClick}>
             Guide
           </Button>
           <div>
@@ -94,7 +94,7 @@ const EditHtmlCode = () => {
           <Footer />
         </div>
       </div>
-      {guideOpen ? <Guide /> : ""}
+      <Guide open={open} onClose={GuideCloseClick} />
     </>
   );
 };
