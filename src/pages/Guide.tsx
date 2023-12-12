@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageList, Modal } from "@mui/material";
+import { Modal } from "@mui/material";
 import styles from "@styles/pages/Guide.module.scss";
 
 interface InputModalProps {
