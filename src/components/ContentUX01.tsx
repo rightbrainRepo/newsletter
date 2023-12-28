@@ -284,7 +284,7 @@ const ContentUX01 = () => {
   return (
     <>
       <div className={cx(styles.thumb01_Wrap, styles.cate_Wrap)}>
-        <div className={styles.thumbW01_title}>
+        <div className={styles.thumbW01_title} style={{marginTop : 14}}>
           <img
             src={
               dialogInputData[dialogInfo.inputIdentifier] &&
