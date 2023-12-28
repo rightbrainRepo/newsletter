@@ -38,7 +38,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
                   ${
                     dialogInputData[`thumbWrap-${i + 1}-subtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap-${i + 1}-subtext-${i + 1}`]
@@ -130,7 +130,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">${
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">${
                     dialogInputData[`thumbWrap02-${i + 1}-subtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap02-${i + 1}-subtext-${i + 1}`]
                       : "App Review"
@@ -219,7 +219,7 @@ const ExportHtmlCode = (
     </tr>
     <tr>
         <td style="vertical-align:top;">
-            <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family:  'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">
+            <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family:  'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
             ${
               dialogInputData["thumbWrap03-1-subtext-1"]
                 ? dialogInputData["thumbWrap03-1-subtext-1"]
@@ -348,7 +348,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
                   ${
                     dialogInputData[`thumbWrap04-${i + 1}-subtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap04-${i + 1}-subtext-${i + 1}`]
@@ -440,7 +440,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">${
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">${
                     dialogInputData[`addThumbWrap-${i + 1}-subtext-${i + 1}`]
                       ? dialogInputData[
                           `addThumbWrap-${i + 1}-subtext-${i + 1}`
