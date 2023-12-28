@@ -381,9 +381,9 @@ const ContentUX03 = () => {
       <div className={cx(styles.thumb03_Wrap, styles.cate_Wrap)}>
         <div className={styles.thumbW01_title}>
           <img
-            src="https://lh3.googleusercontent.com/pw/ADCreHdoM4WTYPiTIeP08_93-VBF42COJ7zpVTjgaAS4Ilg6ZrbxrxJeGiuNydNuTxDrYW_aDrbMJtdHkiaUshTc6XdFnKlibCVpE8BETEjU2jZh3vp-H2HNdg2X3W_PjSb8z21imnr4rv4euW7zHJUU6hkT=w660-h125-s-no-gm?authuser=1"
+            src="https://lh3.googleusercontent.com/pw/ABLVV87nyZtdfOmX7OU7m48P_DnRpVbpMEy3l_kv8Eb0D3z3IFDQHMgDpNxrjLND0K1_Boczxzm7CN1SnNuaw37kSCynboAgokt7H4SZ-3ib50eYengCkZzTY-WWEsyKcC7Vx-IS1vB19-P1vsQv0W-_cJXt=w660-h75-s-no-gm?authuser=2"
             width="660"
-            height="125"
+            height="75"
             alt=""
           />
         </div>
