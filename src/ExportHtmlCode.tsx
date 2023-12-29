@@ -627,7 +627,7 @@ const ExportHtmlCode = (
                   }
                   ${thumbWrapsAddCount ? renderThumbWrapsAdd() : ""}
                   <tr>
-                    <td style="vertical-align:top;">
+                    <td style="vertical-align:top;padding-top:50px;">
                         <!--ux academy title// -->
                         <img src="https://lh3.googleusercontent.com/pw/ABLVV87nyZtdfOmX7OU7m48P_DnRpVbpMEy3l_kv8Eb0D3z3IFDQHMgDpNxrjLND0K1_Boczxzm7CN1SnNuaw37kSCynboAgokt7H4SZ-3ib50eYengCkZzTY-WWEsyKcC7Vx-IS1vB19-P1vsQv0W-_cJXt=w660-h75-s-no-gm?authuser=2" width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                     </td>
