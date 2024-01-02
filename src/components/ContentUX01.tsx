@@ -71,11 +71,11 @@ const ContentUX01 = () => {
       // 삭제할 thumbWrap의 inputIdentifier 찾기
       const removedWrapNumber = thumbWraps[thumbWraps.length - 1];
       const removedInputIdentifiers = [
-        `thumbWrap-${removedWrapNumber}-img-${removedWrapNumber}`,
-        `thumbWrap-${removedWrapNumber}-text-${removedWrapNumber}`,
-        `thumbWrap-${removedWrapNumber}-subtext-${removedWrapNumber}`,
-        `thumbWrap-${removedWrapNumber}-detailtext-${removedWrapNumber}`,
-        `thumbWrap-${removedWrapNumber}-link-${removedWrapNumber}`
+        `thumbWrap-img-${removedWrapNumber}`,
+        `thumbWrap-text-${removedWrapNumber}`,
+        `thumbWrap-subtext-${removedWrapNumber}`,
+        `thumbWrap-detailtext-${removedWrapNumber}`,
+        `thumbWrap-link-${removedWrapNumber}`
       ];
 
       // 각 inputIdentifier에 대해 Redux 상태 업데이트
@@ -99,15 +99,10 @@ const ContentUX01 = () => {
                 <img
                   src={
                     dialogInputData[dialogInfo.inputIdentifier] &&
-                    `thumbWrap-${wrapNumber}-img-${wrapNumber}` ===
-                      dialogInfo.inputIdentifier
+                    `thumbWrap-img-${wrapNumber}` === dialogInfo.inputIdentifier
                       ? dialogInputData[dialogInfo.inputIdentifier]
-                      : dialogInputData[
-                            `thumbWrap-${wrapNumber}-img-${wrapNumber}`
-                          ]
-                        ? dialogInputData[
-                            `thumbWrap-${wrapNumber}-img-${wrapNumber}`
-                          ]
+                      : dialogInputData[`thumbWrap-img-${wrapNumber}`]
+                        ? dialogInputData[`thumbWrap-img-${wrapNumber}`]
                         : "https://lh3.googleusercontent.com/pw/ADCreHeNkVAIaJnzVDkptD8HL3UTYvor4_wx-81o5JKEzV7bsWJtd84rG1XxLvDe6xFX1V27YD1hoVNQbhWWWAw1z_YJZ8-WjZKA9d6cjXpRnQO6sQ1aXzi7gYwpmPphDwaYLCMTMoFPUXi_inWEhjGfwfMI=w660-h275-s-no-gm?authuser=1"
                   }
                   width="660"
@@ -116,9 +111,7 @@ const ContentUX01 = () => {
                 />
                 <div
                   className={styles.imglayer}
-                  onClick={() =>
-                    contDialogOpen("img", `${wrapNumber}-img-${wrapNumber}`)
-                  }>
+                  onClick={() => contDialogOpen("img", `img-${wrapNumber}`)}>
                   <div className={styles.iconBox}>
                     <ModeEdit />
                   </div>
@@ -130,22 +123,15 @@ const ContentUX01 = () => {
             <div className={styles.detailArea}>
               <div className={styles.detailtitle}>
                 {dialogInputData[dialogInfo.inputIdentifier] &&
-                `thumbWrap-${wrapNumber}-text-${wrapNumber}` ===
-                  dialogInfo.inputIdentifier
+                `thumbWrap-text-${wrapNumber}` === dialogInfo.inputIdentifier
                   ? dialogInputData[dialogInfo.inputIdentifier]
-                  : dialogInputData[
-                        `thumbWrap-${wrapNumber}-text-${wrapNumber}`
-                      ]
-                    ? dialogInputData[
-                        `thumbWrap-${wrapNumber}-text-${wrapNumber}`
-                      ]
+                  : dialogInputData[`thumbWrap-text-${wrapNumber}`]
+                    ? dialogInputData[`thumbWrap-text-${wrapNumber}`]
                     : "개인화의 시대"}
               </div>
               <div
                 className={styles.imglayer}
-                onClick={() =>
-                  contDialogOpen("text", `${wrapNumber}-text-${wrapNumber}`)
-                }>
+                onClick={() => contDialogOpen("text", `text-${wrapNumber}`)}>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -156,24 +142,16 @@ const ContentUX01 = () => {
             <div className={styles.detailArea}>
               <div className={styles.detailtitle}>
                 {dialogInputData[dialogInfo.inputIdentifier] &&
-                `thumbWrap-${wrapNumber}-subtext-${wrapNumber}` ===
-                  dialogInfo.inputIdentifier
+                `thumbWrap-subtext-${wrapNumber}` === dialogInfo.inputIdentifier
                   ? dialogInputData[dialogInfo.inputIdentifier]
-                  : dialogInputData[
-                        `thumbWrap-${wrapNumber}-subtext-${wrapNumber}`
-                      ]
-                    ? dialogInputData[
-                        `thumbWrap-${wrapNumber}-subtext-${wrapNumber}`
-                      ]
+                  : dialogInputData[`thumbWrap-subtext-${wrapNumber}`]
+                    ? dialogInputData[`thumbWrap-subtext-${wrapNumber}`]
                     : "UX Story"}
               </div>
               <div
                 className={styles.imglayer}
                 onClick={() =>
-                  contDialogOpen(
-                    "subtext",
-                    `${wrapNumber}-subtext-${wrapNumber}`
-                  )
+                  contDialogOpen("subtext", `subtext-${wrapNumber}`)
                 }>
                 <div className={styles.iconBox}>
                   <ModeEdit />
@@ -185,24 +163,17 @@ const ContentUX01 = () => {
             <div className={styles.detailArea}>
               <div className={styles.detailtitle}>
                 {dialogInputData[dialogInfo.inputIdentifier] &&
-                `thumbWrap-${wrapNumber}-detailtext-${wrapNumber}` ===
+                `thumbWrap-detailtext-${wrapNumber}` ===
                   dialogInfo.inputIdentifier
                   ? dialogInputData[dialogInfo.inputIdentifier]
-                  : dialogInputData[
-                        `thumbWrap-${wrapNumber}-detailtext-${wrapNumber}`
-                      ]
-                    ? dialogInputData[
-                        `thumbWrap-${wrapNumber}-detailtext-${wrapNumber}`
-                      ]
+                  : dialogInputData[`thumbWrap-detailtext-${wrapNumber}`]
+                    ? dialogInputData[`thumbWrap-detailtext-${wrapNumber}`]
                     : " 추천과 더불어 최근의 UX/UI에서 주목받고 있는 게 '개인화'입니다. 개인화는 설정 등의 맞춤화와는 달리 데이터에 기반하여 사용자에게 알맞은 정보나 기능을 전달하는 것입니다. 이번글에서는 최근 고도화된 개인화의 AI활용에 대해서 이야기해 봅니다.추천과 더불어 최근의 UX/UI에서 주목받고 있는 게 ‘개인화’입니다."}
               </div>
               <div
                 className={styles.imglayer}
                 onClick={() =>
-                  contDialogOpen(
-                    "detailtext",
-                    `${wrapNumber}-detailtext-${wrapNumber}`
-                  )
+                  contDialogOpen("detailtext", `detailtext-${wrapNumber}`)
                 }>
                 <div className={styles.iconBox}>
                   <ModeEdit />
@@ -211,8 +182,7 @@ const ContentUX01 = () => {
             </div>
           </div>
           {/* 링크 영역 */}
-          {linkVisibility[`thumbWrap-${wrapNumber}-link-${wrapNumber}`] ==
-          false ? (
+          {linkVisibility[`thumbWrap-link-${wrapNumber}`] == false ? (
             ""
           ) : (
             <div className={cx(styles.thumbBox, styles.thumb_link)}>
@@ -224,9 +194,7 @@ const ContentUX01 = () => {
               />
               <div
                 className={styles.imglayer}
-                onClick={() =>
-                  contDialogOpen("link", `${wrapNumber}-link-${wrapNumber}`)
-                }>
+                onClick={() => contDialogOpen("link", `link-${wrapNumber}`)}>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -235,29 +203,20 @@ const ContentUX01 = () => {
                 className={styles.linkDel}
                 variant="contained"
                 onClick={() =>
-                  linkBtnClick(
-                    0,
-                    false,
-                    `thumbWrap-${wrapNumber}-link-${wrapNumber}`
-                  )
+                  linkBtnClick(0, false, `thumbWrap-link-${wrapNumber}`)
                 }>
                 <Delete />
                 바로보기 삭제
               </Button>
             </div>
           )}
-          {linkVisibility[`thumbWrap-${wrapNumber}-link-${wrapNumber}`] ==
-          false ? (
+          {linkVisibility[`thumbWrap-link-${wrapNumber}`] == false ? (
             <Button
               className={styles.addLinkBtn}
               variant="contained"
               fullWidth
               onClick={() =>
-                linkBtnClick(
-                  1,
-                  true,
-                  `thumbWrap-${wrapNumber}-link-${wrapNumber}`
-                )
+                linkBtnClick(1, true, `thumbWrap-link-${wrapNumber}`)
               }>
               <Add />
               바로보기 추가
@@ -270,12 +229,12 @@ const ContentUX01 = () => {
             open={
               dialogInfo.open &&
               dialogInfo.inputIdentifier ==
-                `thumbWrap-${wrapNumber}-${dialogInfo.type}-${wrapNumber}`
+                `thumbWrap-${dialogInfo.type}-${wrapNumber}`
             }
             onClose={contDialogClose}
             title={`입력하기`}
             inputtype={dialogInfo.type}
-            inputIdentifier={`thumbWrap-${wrapNumber}-${dialogInfo.type}-${wrapNumber}`}>
+            inputIdentifier={`thumbWrap-${dialogInfo.type}-${wrapNumber}`}>
             {renderDialogContent()}
           </InputDialog>
         </div>
@@ -286,14 +245,14 @@ const ContentUX01 = () => {
   return (
     <>
       <div className={cx(styles.thumb01_Wrap, styles.cate_Wrap)}>
-        <div className={styles.thumbW01_title} style={{marginTop : 14}}>
+        <div className={styles.thumbW01_title} style={{ marginTop: 14 }}>
           <img
             src={
               dialogInputData[dialogInfo.inputIdentifier] &&
-              `thumbWrap-1-title-1` === dialogInfo.inputIdentifier
+              `thumbWrap-title-1` === dialogInfo.inputIdentifier
                 ? dialogInputData[dialogInfo.inputIdentifier]
-                : dialogInputData[`thumbWrap-1-title-1`]
-                  ? dialogInputData[`thumbWrap-1-title-1`]
+                : dialogInputData[`thumbWrap-title-1`]
+                  ? dialogInputData[`thumbWrap-title-1`]
                   : "https://lh3.googleusercontent.com/pw/ABLVV84V5lPRWl-KnK9CSyPSSNRcA87m2wOiXZyBcsW6UHx-rr_eYKpsyW1_xg6cmpEq5EqhNOhs7ElsARBQmthcwe-cCAtwqLMBqFa6OqL7KAlZTFKxe3AkQTC1Aficc8kXq7kVPmw_qhTAyUqczBx5fJEo=w660-h75-s-no-gm?authuser=2"
             }
             width="660"
@@ -302,7 +261,7 @@ const ContentUX01 = () => {
           />
           <div
             className={styles.imglayer}
-            onClick={() => contDialogOpen("title", `1-title-1`)}>
+            onClick={() => contDialogOpen("title", `title-1`)}>
             <div className={styles.iconBox}>
               <ModeEdit />
             </div>
@@ -310,12 +269,12 @@ const ContentUX01 = () => {
           <InputDialog
             open={
               dialogInfo.open &&
-              dialogInfo.inputIdentifier == `thumbWrap-1-title-1`
+              dialogInfo.inputIdentifier == `thumbWrap-title-1`
             }
             onClose={contDialogClose}
             title={`입력하기`}
             inputtype={dialogInfo.type}
-            inputIdentifier={`thumbWrap-1-title-1`}>
+            inputIdentifier={`thumbWrap-title-1`}>
             {renderDialogContent()}
           </InputDialog>
         </div>

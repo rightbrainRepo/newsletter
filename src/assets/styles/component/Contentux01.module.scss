@@ -15,8 +15,13 @@
         position:relative;
         .imglayer {
             top: -6px;
-            height: 124px;
+            height: 75px;
         }
+    }
+
+    &.thumb04_Wrap {
+        margin-top: 80px;
+        border-top:1px solid #ddd;
     }
 }
 

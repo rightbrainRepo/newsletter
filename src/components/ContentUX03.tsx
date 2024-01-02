@@ -156,8 +156,8 @@ const ContentUX03 = () => {
               <img
                 src={
                   dialogInputData[dialogInfo.inputIdentifier] &&
-                  "thumbWrap03-1-img-1" === dialogInfo.inputIdentifier
-                    ? dialogInputData["thumbWrap03-1-img-1"]
+                  "thumbWrap03-img-1" === dialogInfo.inputIdentifier
+                    ? dialogInputData["thumbWrap03-img-1"]
                     : "https://lh3.googleusercontent.com/pw/ADCreHf53NO9r7dYxvF8yG7wf24zi3IS3s9VOlE5VJ5eRl3myxzD7YBpiNQXp9wlgscWCKOKX3wpY6hHwKmmTeIZOhdw6OYphzhXt-Qomc1azoHaLTmTelLZ5ihWqjwsOp2xt-m37xrjio_K47n8cRCY9-eX=w660-h275-s-no-gm?authuser=1"
                 }
                 width="660"
@@ -166,7 +166,7 @@ const ContentUX03 = () => {
               />
               <div
                 className={styles.imglayer}
-                onClick={() => contDialogOpen("img", "1-img-1")}>
+                onClick={() => contDialogOpen("img", "img-1")}>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -176,12 +176,12 @@ const ContentUX03 = () => {
           <InputDialog
             open={
               dialogInfo.open &&
-              dialogInfo.inputIdentifier == "thumbWrap03-1-img-1"
+              dialogInfo.inputIdentifier == "thumbWrap03-img-1"
             }
             onClose={contDialogClose}
             title={`입력하기`}
             inputtype={dialogInfo.type}
-            inputIdentifier={"thumbWrap03-1-img-1"}>
+            inputIdentifier={"thumbWrap03-img-1"}>
             {renderDialogContent()}
           </InputDialog>
         </div>
@@ -189,15 +189,15 @@ const ContentUX03 = () => {
           <div className={styles.detailArea}>
             <div className={styles.detailtitle}>
               {dialogInputData[dialogInfo.inputIdentifier] &&
-              "thumbWrap03-1-text-1" === dialogInfo.inputIdentifier
+              "thumbWrap03-text-1" === dialogInfo.inputIdentifier
                 ? dialogInputData[dialogInfo.inputIdentifier]
-                : dialogInputData["thumbWrap03-1-text-1"]
-                  ? dialogInputData["thumbWrap03-1-text-1"]
+                : dialogInputData["thumbWrap03-text-1"]
+                  ? dialogInputData["thumbWrap03-text-1"]
                   : "라이트브레인 UX 아카데미 오픈 프로젝트 공개"}
             </div>
             <div
               className={styles.imglayer}
-              onClick={() => contDialogOpen("text", "1-text-1")}>
+              onClick={() => contDialogOpen("text", "text-1")}>
               <div className={styles.iconBox}>
                 <ModeEdit />
               </div>
@@ -206,12 +206,12 @@ const ContentUX03 = () => {
           <InputDialog
             open={
               dialogInfo.open &&
-              dialogInfo.inputIdentifier == "thumbWrap03-1-text-1"
+              dialogInfo.inputIdentifier == "thumbWrap03-text-1"
             }
             onClose={contDialogClose}
             title={`입력하기`}
             inputtype={dialogInfo.type}
-            inputIdentifier={"thumbWrap03-1-text-1"}>
+            inputIdentifier={"thumbWrap03-text-1"}>
             {renderDialogContent()}
           </InputDialog>
         </div>
@@ -219,15 +219,15 @@ const ContentUX03 = () => {
           <div className={styles.detailArea}>
             <div className={styles.detailtitle}>
               {dialogInputData[dialogInfo.inputIdentifier] &&
-              "thumbWrap03-1-subtext-1" === dialogInfo.inputIdentifier
+              "thumbWrap03-subtext-1" === dialogInfo.inputIdentifier
                 ? dialogInputData[dialogInfo.inputIdentifier]
-                : dialogInputData["thumbWrap03-1-subtext-1"]
-                  ? dialogInputData["thumbWrap03-1-subtext-1"]
+                : dialogInputData["thumbWrap03-subtext-1"]
+                  ? dialogInputData["thumbWrap03-subtext-1"]
                   : "UX Story"}
             </div>
             <div
               className={styles.imglayer}
-              onClick={() => contDialogOpen("subtext", `1-subtext-1`)}>
+              onClick={() => contDialogOpen("subtext", `subtext-1`)}>
               <div className={styles.iconBox}>
                 <ModeEdit />
               </div>
@@ -236,12 +236,12 @@ const ContentUX03 = () => {
           <InputDialog
             open={
               dialogInfo.open &&
-              dialogInfo.inputIdentifier == "thumbWrap03-1-subtext-1"
+              dialogInfo.inputIdentifier == "thumbWrap03-subtext-1"
             }
             onClose={contDialogClose}
             title={`입력하기`}
             inputtype={dialogInfo.type}
-            inputIdentifier={"thumbWrap03-1-subtext-1"}>
+            inputIdentifier={"thumbWrap03-subtext-1"}>
             {renderDialogContent()}
           </InputDialog>
         </div>
@@ -249,15 +249,15 @@ const ContentUX03 = () => {
           <div className={styles.detailArea}>
             <div className={styles.detailtitle}>
               {dialogInputData[dialogInfo.inputIdentifier] &&
-              `thumbWrap03-1-detailtext-1` === dialogInfo.inputIdentifier
+              `thumbWrap03-detailtext-1` === dialogInfo.inputIdentifier
                 ? dialogInputData[dialogInfo.inputIdentifier]
-                : dialogInputData[`thumbWrap03-1-detailtext-1`]
-                  ? dialogInputData[`thumbWrap03-1-detailtext-1`]
+                : dialogInputData[`thumbWrap03-detailtext-1`]
+                  ? dialogInputData[`thumbWrap03-detailtext-1`]
                   : " 추천과 더불어 최근의 UX/UI에서 주목받고 있는 게 '개인화'입니다. 개인화는 설정 등의 맞춤화와는 달리 데이터에 기반하여 사용자에게 알맞은 정보나 기능을 전달하는 것입니다. 이번글에서는 최근 고도화된 개인화의 AI활용에 대해서 이야기해 봅니다.추천과 더불어 최근의 UX/UI에서 주목받고 있는 게 ‘개인화’입니다."}
             </div>
             <div
               className={styles.imglayer}
-              onClick={() => contDialogOpen("detailtext", `1-detailtext-1`)}>
+              onClick={() => contDialogOpen("detailtext", `detailtext-1`)}>
               <div className={styles.iconBox}>
                 <ModeEdit />
               </div>
@@ -266,12 +266,12 @@ const ContentUX03 = () => {
           <InputDialog
             open={
               dialogInfo.open &&
-              dialogInfo.inputIdentifier == "thumbWrap03-1-detailtext-1"
+              dialogInfo.inputIdentifier == "thumbWrap03-detailtext-1"
             }
             onClose={contDialogClose}
             title={`입력하기`}
             inputtype={dialogInfo.type}
-            inputIdentifier={"thumbWrap03-1-detailtext-1"}>
+            inputIdentifier={"thumbWrap03-detailtext-1"}>
             {renderDialogContent()}
           </InputDialog>
         </div>
@@ -290,24 +290,17 @@ const ContentUX03 = () => {
                 <div className={styles.left}>
                   <p className={styles.lititle}>
                     {dialogInputData[listdialogInfo.inputIdentifier] &&
-                    `listTextWrap-${index + 1}-listText-${index + 1}` ===
+                    `listTextWrap-listText-${index + 1}` ===
                       dialogInfo.inputIdentifier
                       ? dialogInputData[listdialogInfo.inputIdentifier]
-                      : dialogInputData[
-                            `listTextWrap-${index + 1}-listText-${index + 1}`
-                          ]
-                        ? dialogInputData[
-                            `listTextWrap-${index + 1}-listText-${index + 1}`
-                          ]
+                      : dialogInputData[`listTextWrap-listText-${index + 1}`]
+                        ? dialogInputData[`listTextWrap-listText-${index + 1}`]
                         : item[0].content}
                   </p>
                   <div
                     className={styles.imglayer}
                     onClick={() =>
-                      contListDialogOpen(
-                        "listText",
-                        `${index + 1}-listText-${index + 1}`
-                      )
+                      contListDialogOpen("listText", `listText-${index + 1}`)
                     }>
                     <div className={styles.iconBox}>
                       <ModeEdit />
@@ -326,10 +319,7 @@ const ContentUX03 = () => {
                   <div
                     className={styles.imglayer}
                     onClick={() =>
-                      contListDialogOpen(
-                        "listLink",
-                        `${index + 1}-listLink-${index + 1}`
-                      )
+                      contListDialogOpen("listLink", `listLink-${index + 1}`)
                     }>
                     <div className={styles.iconBox}>
                       <ModeEdit />
@@ -344,14 +334,12 @@ const ContentUX03 = () => {
                 open={
                   listdialogInfo.open &&
                   listdialogInfo.inputIdentifier ===
-                    `listTextWrap-${index + 1}-listText-${index + 1}`
+                    `listTextWrap-listText-${index + 1}`
                 }
                 onClose={contListDialogClose}
                 title={`입력하기`}
                 inputtype="listText"
-                inputIdentifier={`listTextWrap-${index + 1}-listText-${
-                  index + 1
-                }`}>
+                inputIdentifier={`listTextWrap-listText-${index + 1}`}>
                 {renderDialogContent()}
               </InputDialog>
               <InputDialog
@@ -359,14 +347,12 @@ const ContentUX03 = () => {
                 open={
                   listdialogInfo.open &&
                   listdialogInfo.inputIdentifier ===
-                    `listTextWrap-${index + 1}-listLink-${index + 1}`
+                    `listTextWrap-listLink-${index + 1}`
                 }
                 onClose={contListDialogClose}
                 title={`입력하기`}
                 inputtype="listLink"
-                inputIdentifier={`listTextWrap-${index + 1}-listLink-${
-                  index + 1
-                }`}>
+                inputIdentifier={`listTextWrap-listLink-${index + 1}`}>
                 {renderDialogContent()}
               </InputDialog>
             </React.Fragment>
