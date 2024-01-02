@@ -38,7 +38,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
                   ${
                     dialogInputData[`thumbWrap-${i + 1}-subtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap-${i + 1}-subtext-${i + 1}`]
@@ -130,7 +130,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">${
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">${
                     dialogInputData[`thumbWrap02-${i + 1}-subtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap02-${i + 1}-subtext-${i + 1}`]
                       : "App Review"
@@ -219,7 +219,7 @@ const ExportHtmlCode = (
     </tr>
     <tr>
         <td style="vertical-align:top;">
-            <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family:  'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">
+            <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family:  'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
             ${
               dialogInputData["thumbWrap03-1-subtext-1"]
                 ? dialogInputData["thumbWrap03-1-subtext-1"]
@@ -348,7 +348,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
                   ${
                     dialogInputData[`thumbWrap04-${i + 1}-subtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap04-${i + 1}-subtext-${i + 1}`]
@@ -440,7 +440,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#444444;">${
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">${
                     dialogInputData[`addThumbWrap-${i + 1}-subtext-${i + 1}`]
                       ? dialogInputData[
                           `addThumbWrap-${i + 1}-subtext-${i + 1}`
@@ -592,44 +592,44 @@ const ExportHtmlCode = (
                         ${
                           dialogInputData[`thumbWrap-1-title-1`]
                             ? dialogInputData[`thumbWrap-1-title-1`]
-                            : "https://lh3.googleusercontent.com/pw/ADCreHeP3mndOi5G4cff2B0nvhSAC9Gzjq1sA8R24PkwMMiMXa-ZWKxzq1GcgboWRNLxlNltzUA23kyN8FE0106bS7vZPjBBS07e76a69WKrb0OLqtSZwXytWgqkGpgVnUNWLPV94FzmaxXhQw_fQQ-KWysc=w660-h75-s-no-gm?authuser=1"
+                            : "https://lh3.googleusercontent.com/pw/ABLVV84V5lPRWl-KnK9CSyPSSNRcA87m2wOiXZyBcsW6UHx-rr_eYKpsyW1_xg6cmpEq5EqhNOhs7ElsARBQmthcwe-cCAtwqLMBqFa6OqL7KAlZTFKxe3AkQTC1Aficc8kXq7kVPmw_qhTAyUqczBx5fJEo=w660-h75-s-no-gm?authuser=2"
                         }
                          width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                     </td>
                  </tr>
                   ${renderThumbWraps()}
                   <tr>
-                    <td style="vertical-align:top;">
+                    <td style="vertical-align:top;padding-top:50px;">
                         <!--special review title// -->
                         <img src=${
                           dialogInputData[`thumbWrap02-1-title-1`]
                             ? dialogInputData[`thumbWrap02-1-title-1`]
-                            : "https://lh3.googleusercontent.com/pw/ADCreHeiaYOn5hRewAHiehlsooUi7e5lNqKq8YlswO-jZhpIZKX_Pg8u4D10PNimm1RIdhfVRLE3YkVJGfO0efu80JkbLErR-myWirFJNnJdCW-Ab4RsDi9s4jvCrYekr3wevoBosROxK5OBivZCkconMgIM=w660-h124-s-no-gm?authuser=1"
+                            : "https://lh3.googleusercontent.com/pw/ABLVV850GpnNAedbnHSRV8wKT-EE1QAWTT6AvVHpiOvj0tWB0YL4x3NHfpgxfibMYi7MoVlP6HmdWbi3QXz3F3kVRy42Puy-AIHJDd0EkMtyM8-Lh1AWsSas5eQmUa-xOjxAjYz5irruUgodQTy24pBTdrhc=w660-h75-s-no-gm?authuser=2"
                         }
-                         width="660" height="125" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                         width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                     </td>
                   </tr>
                   ${renderThumbWraps02()}
                   ${
                     thumbWrapsAddCount
                       ? `<tr>
-                  <td style="vertical-align:top;">
+                  <td style="vertical-align:top;padding-top:50px;">
                       <!--special review title// -->
                       <img src=${
                         dialogInputData[`addThumbWrap-1-title-1`]
                           ? dialogInputData[`addThumbWrap-1-title-1`]
-                          : "https://lh3.googleusercontent.com/pw/ADCreHeiaYOn5hRewAHiehlsooUi7e5lNqKq8YlswO-jZhpIZKX_Pg8u4D10PNimm1RIdhfVRLE3YkVJGfO0efu80JkbLErR-myWirFJNnJdCW-Ab4RsDi9s4jvCrYekr3wevoBosROxK5OBivZCkconMgIM=w660-h124-s-no-gm?authuser=1"
+                          : "https://lh3.googleusercontent.com/pw/ABLVV850GpnNAedbnHSRV8wKT-EE1QAWTT6AvVHpiOvj0tWB0YL4x3NHfpgxfibMYi7MoVlP6HmdWbi3QXz3F3kVRy42Puy-AIHJDd0EkMtyM8-Lh1AWsSas5eQmUa-xOjxAjYz5irruUgodQTy24pBTdrhc=w660-h75-s-no-gm?authuser=2"
                       }
-                       width="660" height="125" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                       width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                   </td>
                 </tr>`
                       : ""
                   }
                   ${thumbWrapsAddCount ? renderThumbWrapsAdd() : ""}
                   <tr>
-                    <td style="vertical-align:top;">
+                    <td style="vertical-align:top;padding-top:50px;">
                         <!--ux academy title// -->
-                        <img src="https://lh3.googleusercontent.com/pw/ADCreHdoM4WTYPiTIeP08_93-VBF42COJ7zpVTjgaAS4Ilg6ZrbxrxJeGiuNydNuTxDrYW_aDrbMJtdHkiaUshTc6XdFnKlibCVpE8BETEjU2jZh3vp-H2HNdg2X3W_PjSb8z21imnr4rv4euW7zHJUU6hkT=w660-h125-s-no-gm?authuser=1" width="660" height="125" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                        <img src="https://lh3.googleusercontent.com/pw/ABLVV87nyZtdfOmX7OU7m48P_DnRpVbpMEy3l_kv8Eb0D3z3IFDQHMgDpNxrjLND0K1_Boczxzm7CN1SnNuaw37kSCynboAgokt7H4SZ-3ib50eYengCkZzTY-WWEsyKcC7Vx-IS1vB19-P1vsQv0W-_cJXt=w660-h75-s-no-gm?authuser=2" width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                     </td>
                   </tr>
                   ${renderThumbWraps03()}
@@ -645,7 +645,7 @@ const ExportHtmlCode = (
                  </tr>
                   <td style="vertical-align:top;">
                     <!--rightbrain insight title// -->
-                    <img src="https://lh3.googleusercontent.com/pw/ADCreHfX7CzOd1iI4ZOlc3cgDGUrLPWsifzd4PZyPNvbSJICD9t8EbZmz1JxvkK35M75E6SNdDECTBPanV_qOfiO8aINLqU-jXACYaJWYszvWhFphnsSpw1kL6EpjdUJCniLSuHjCpPjy2IlUVd6S5rvhdlV=w660-h106-s-no-gm?authuser=1" width="660" height="106" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV843aEMyvyF3EjkXnbs3tuSWTcN0oPnKwedC_Q9_1A4UVNjSvyN4hqznEwSe2jvHsoKyEETk6O8KozRY0xJpV2CkEse4rMtPXdqw3iW7VjDFxnACktSYMuzUwFmT-w_vVfgLOTiTPBagLx5-raYRBwug=w660-h75-s-no-gm?authuser=2" width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                  </td>
                  ${renderThumbWraps04()}
                   <tr>

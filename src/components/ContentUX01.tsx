@@ -286,7 +286,7 @@ const ContentUX01 = () => {
   return (
     <>
       <div className={cx(styles.thumb01_Wrap, styles.cate_Wrap)}>
-        <div className={styles.thumbW01_title}>
+        <div className={styles.thumbW01_title} style={{marginTop : 14}}>
           <img
             src={
               dialogInputData[dialogInfo.inputIdentifier] &&
@@ -294,7 +294,7 @@ const ContentUX01 = () => {
                 ? dialogInputData[dialogInfo.inputIdentifier]
                 : dialogInputData[`thumbWrap-1-title-1`]
                   ? dialogInputData[`thumbWrap-1-title-1`]
-                  : "https://lh3.googleusercontent.com/pw/ADCreHeP3mndOi5G4cff2B0nvhSAC9Gzjq1sA8R24PkwMMiMXa-ZWKxzq1GcgboWRNLxlNltzUA23kyN8FE0106bS7vZPjBBS07e76a69WKrb0OLqtSZwXytWgqkGpgVnUNWLPV94FzmaxXhQw_fQQ-KWysc=w660-h75-s-no-gm?authuser=1"
+                  : "https://lh3.googleusercontent.com/pw/ABLVV84V5lPRWl-KnK9CSyPSSNRcA87m2wOiXZyBcsW6UHx-rr_eYKpsyW1_xg6cmpEq5EqhNOhs7ElsARBQmthcwe-cCAtwqLMBqFa6OqL7KAlZTFKxe3AkQTC1Aficc8kXq7kVPmw_qhTAyUqczBx5fJEo=w660-h75-s-no-gm?authuser=2"
             }
             width="660"
             height="75"
