@@ -82,6 +82,8 @@ const ContentUX01 = () => {
       removedInputIdentifiers.forEach((inputIdentifier) => {
         dispatch(removeDialogInput(inputIdentifier));
       });
+
+      dispatch(setThumbWrapsCountPart1(thumbWraps.length - 1));
     }
   };
 
