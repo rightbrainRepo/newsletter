@@ -232,15 +232,16 @@ const ExportHtmlCode = (
     const listTitle = [
       "29cm – UX/UI 개선",
       "토스 모바일앱 – UX/UI 개선",
-      "이마트몰 – UX/UI 개선",
-      "배달의민족 – UX/UI 개선",
+      "프로젝트명",
+      "프로젝트명",
       "프로젝트명"
     ];
     const listLink = [
       "https://blog.rightbrain.co.kr/?p=15044",
       "https://blog.rightbrain.co.kr/?p=15021",
-      "https://blog.rightbrain.co.kr/?p=14899",
-      "https://blog.rightbrain.co.kr/?p=14886"
+      "https://blog.rightbrain.co.kr",
+      "https://blog.rightbrain.co.kr",
+      "https://blog.rightbrain.co.kr"
     ];
     for (let i = 0; i < thumbWrapsCountPart3; i++) {
       thumbWrapsHtml += `

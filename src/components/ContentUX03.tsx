@@ -29,42 +29,22 @@ const ContentUX03 = () => {
   const [listItems, setListItems] = useState([
     [
       {
-        type: "1-listText-1",
+        type: "listText-1",
         content: "29cm – UX/UI 개선"
       },
       {
-        type: "1-listLink-1",
+        type: "listLink-1",
         link: "https://blog.rightbrain.co.kr/?p=15044"
       }
     ],
     [
       {
-        type: "2-listText-2",
+        type: "listText-2",
         content: "토스 모바일앱 – UX/UI 개선"
       },
       {
-        type: "2-listLink-2",
+        type: "listLink-2",
         link: "https://blog.rightbrain.co.kr/?p=15021"
-      }
-    ],
-    [
-      {
-        type: "3-listText-3",
-        content: "이마트몰 – UX/UI 개선"
-      },
-      {
-        type: "3-listLink-3",
-        link: "https://blog.rightbrain.co.kr/?p=14899"
-      }
-    ],
-    [
-      {
-        type: "4-listText-4",
-        content: "배달의민족 – UX/UI 개선"
-      },
-      {
-        type: "4-listLink-4",
-        link: "https://blog.rightbrain.co.kr/?p=14886"
       }
     ]
   ]);

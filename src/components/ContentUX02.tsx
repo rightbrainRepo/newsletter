@@ -194,9 +194,7 @@ const ContentUX02 = () => {
               />
               <div
                 className={styles.imglayer}
-                onClick={() =>
-                  contDialogOpen("link", `${wrapNumber}-link-${wrapNumber}`)
-                }>
+                onClick={() => contDialogOpen("link", `link-${wrapNumber}`)}>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -205,11 +203,7 @@ const ContentUX02 = () => {
                 className={styles.linkDel}
                 variant="contained"
                 onClick={() =>
-                  linkBtnClick(
-                    0,
-                    false,
-                    `thumbWrap02-${wrapNumber}-link-${wrapNumber}`
-                  )
+                  linkBtnClick(0, false, `thumbWrap02-link-${wrapNumber}`)
                 }>
                 <Delete />
                 바로보기 삭제
