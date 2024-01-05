@@ -556,8 +556,8 @@ const ExportHtmlCode = (
                         <!-- ux design insigt title// -->
                         <img src=
                         ${
-                          dialogInputData[`thumbWrap-1-title-1`]
-                            ? dialogInputData[`thumbWrap-1-title-1`]
+                          dialogInputData[`thumbWrap-title-1`]
+                            ? dialogInputData[`thumbWrap-title-1`]
                             : "https://lh3.googleusercontent.com/pw/ABLVV84V5lPRWl-KnK9CSyPSSNRcA87m2wOiXZyBcsW6UHx-rr_eYKpsyW1_xg6cmpEq5EqhNOhs7ElsARBQmthcwe-cCAtwqLMBqFa6OqL7KAlZTFKxe3AkQTC1Aficc8kXq7kVPmw_qhTAyUqczBx5fJEo=w660-h75-s-no-gm?authuser=2"
                         }
                          width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
@@ -568,8 +568,8 @@ const ExportHtmlCode = (
                     <td style="vertical-align:top;padding-top:50px;">
                         <!--special review title// -->
                         <img src=${
-                          dialogInputData[`thumbWrap02-1-title-1`]
-                            ? dialogInputData[`thumbWrap02-1-title-1`]
+                          dialogInputData[`thumbWrap02-title-1`]
+                            ? dialogInputData[`thumbWrap02-title-1`]
                             : "https://lh3.googleusercontent.com/pw/ABLVV850GpnNAedbnHSRV8wKT-EE1QAWTT6AvVHpiOvj0tWB0YL4x3NHfpgxfibMYi7MoVlP6HmdWbi3QXz3F3kVRy42Puy-AIHJDd0EkMtyM8-Lh1AWsSas5eQmUa-xOjxAjYz5irruUgodQTy24pBTdrhc=w660-h75-s-no-gm?authuser=2"
                         }
                          width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
@@ -582,8 +582,8 @@ const ExportHtmlCode = (
                   <td style="vertical-align:top;padding-top:50px;">
                       <!--special review title// -->
                       <img src=${
-                        dialogInputData[`addThumbWrap-1-title-1`]
-                          ? dialogInputData[`addThumbWrap-1-title-1`]
+                        dialogInputData[`addThumbWrap-title-1`]
+                          ? dialogInputData[`addThumbWrap-title-1`]
                           : "https://lh3.googleusercontent.com/pw/ABLVV850GpnNAedbnHSRV8wKT-EE1QAWTT6AvVHpiOvj0tWB0YL4x3NHfpgxfibMYi7MoVlP6HmdWbi3QXz3F3kVRy42Puy-AIHJDd0EkMtyM8-Lh1AWsSas5eQmUa-xOjxAjYz5irruUgodQTy24pBTdrhc=w660-h75-s-no-gm?authuser=2"
                       }
                        width="660" height="75" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
