@@ -268,15 +268,15 @@ const ContentAddux = () => {
                     ? dialogInputData[dialogInfo.inputIdentifier]
                     : dialogInputData[`addThumbWrap-title-1`]
                       ? dialogInputData[`addThumbWrap-title-1`]
-                      : "https://lh3.googleusercontent.com/pw/ADCreHeiaYOn5hRewAHiehlsooUi7e5lNqKq8YlswO-jZhpIZKX_Pg8u4D10PNimm1RIdhfVRLE3YkVJGfO0efu80JkbLErR-myWirFJNnJdCW-Ab4RsDi9s4jvCrYekr3wevoBosROxK5OBivZCkconMgIM=w660-h124-s-no-gm?authuser=1"
+                      : "https://lh3.googleusercontent.com/pw/ABLVV850GpnNAedbnHSRV8wKT-EE1QAWTT6AvVHpiOvj0tWB0YL4x3NHfpgxfibMYi7MoVlP6HmdWbi3QXz3F3kVRy42Puy-AIHJDd0EkMtyM8-Lh1AWsSas5eQmUa-xOjxAjYz5irruUgodQTy24pBTdrhc=w660-h75-s-no-gm?authuser=2"
                 }
                 width="660"
-                height="124"
+                height="75"
                 alt=""
               />
               <div
                 className={styles.imglayer}
-                onClick={() => contDialogOpen("title02", `addThumbWrap-1`)}>
+                onClick={() => contDialogOpen("title02", `title-1`)}>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -284,7 +284,7 @@ const ContentAddux = () => {
               <InputDialog
                 open={
                   dialogInfo.open &&
-                  dialogInfo.inputIdentifier == `thumbWrap-addThumbWrap-1`
+                  dialogInfo.inputIdentifier == `addThumbWrap-title-1`
                 }
                 onClose={contDialogClose}
                 title={`입력하기`}
