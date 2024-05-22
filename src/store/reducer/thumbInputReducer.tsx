@@ -63,7 +63,7 @@ const initialState: StateType = {
   parts: {
     part1: 2,
     part2: 2,
-    part3: 4,
+    part3: 2,
     part4: 1,
     partAdd: 2,
     isvisible: false

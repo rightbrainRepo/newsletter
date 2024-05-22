@@ -73,17 +73,19 @@ const ContentAddux = () => {
       // 삭제할 thumbWrap의 inputIdentifier 찾기
       const removedWrapNumber = thumbWraps[thumbWraps.length - 1];
       const removedInputIdentifiers = [
-        `addThumbWrap-${removedWrapNumber}-img-${removedWrapNumber}`,
-        `addThumbWrap-${removedWrapNumber}-text-${removedWrapNumber}`,
-        `addThumbWrap-${removedWrapNumber}-subtext-${removedWrapNumber}`,
-        `addThumbWrap-${removedWrapNumber}-detailtext-${removedWrapNumber}`,
-        `addThumbWrap-${removedWrapNumber}-link-${removedWrapNumber}`
+        `addThumbWrap-img-${removedWrapNumber}`,
+        `addThumbWrap-text-${removedWrapNumber}`,
+        `addThumbWrap-subtext-${removedWrapNumber}`,
+        `addThumbWrap-detailtext-${removedWrapNumber}`,
+        `addThumbWrap-link-${removedWrapNumber}`
       ];
 
       // 각 inputIdentifier에 대해 Redux 상태 업데이트
       removedInputIdentifiers.forEach((inputIdentifier) => {
         dispatch(removeDialogInput(inputIdentifier));
       });
+
+      dispatch(setThumbWrapsCountPartAdd(thumbWraps.length - 1));
     }
   };
 
@@ -107,15 +109,11 @@ const ContentAddux = () => {
                 <img
                   src={
                     dialogInputData[dialogInfo.inputIdentifier] &&
-                    `addThumbWrap-${wrapNumber}-img-${wrapNumber}` ===
+                    `addThumbWrap-img-${wrapNumber}` ===
                       dialogInfo.inputIdentifier
                       ? dialogInputData[dialogInfo.inputIdentifier]
-                      : dialogInputData[
-                            `addThumbWrap-${wrapNumber}-img-${wrapNumber}`
-                          ]
-                        ? dialogInputData[
-                            `addThumbWrap-${wrapNumber}-img-${wrapNumber}`
-                          ]
+                      : dialogInputData[`addThumbWrap-img-${wrapNumber}`]
+                        ? dialogInputData[`addThumbWrap-img-${wrapNumber}`]
                         : "https://lh3.googleusercontent.com/pw/ADCreHex2IScRlsVI9Ch3gPWPZJMyF2Wv796SlS0XKAEafxx33EgmJvtbk7XifWUVjxEv1hqFnOokXV4-7-u6jr6A2QTPOM2kVttf4VtIJRH1V_B2YFEB-ve75M7YjE5pYH8floIGl_UKnSpymhdxPq_rDjp=w660-h275-s-no-gm?authuser=1"
                   }
                   width="660"
@@ -124,9 +122,7 @@ const ContentAddux = () => {
                 />
                 <div
                   className={styles.imglayer}
-                  onClick={() =>
-                    contDialogOpen("img", `${wrapNumber}-img-${wrapNumber}`)
-                  }>
+                  onClick={() => contDialogOpen("img", `img-${wrapNumber}`)}>
                   <div className={styles.iconBox}>
                     <ModeEdit />
                   </div>
@@ -138,22 +134,15 @@ const ContentAddux = () => {
             <div className={styles.detailArea}>
               <div className={styles.detailtitle}>
                 {dialogInputData[dialogInfo.inputIdentifier] &&
-                `addThumbWrap-${wrapNumber}-text-${wrapNumber}` ===
-                  dialogInfo.inputIdentifier
+                `addThumbWrap-text-${wrapNumber}` === dialogInfo.inputIdentifier
                   ? dialogInputData[dialogInfo.inputIdentifier]
-                  : dialogInputData[
-                        `addThumbWrap-${wrapNumber}-text-${wrapNumber}`
-                      ]
-                    ? dialogInputData[
-                        `addThumbWrap-${wrapNumber}-text-${wrapNumber}`
-                      ]
+                  : dialogInputData[`addThumbWrap-text-${wrapNumber}`]
+                    ? dialogInputData[`addThumbWrap-text-${wrapNumber}`]
                     : "슈퍼앱 : 하나의 앱에서 모든 서비스를"}
               </div>
               <div
                 className={styles.imglayer}
-                onClick={() =>
-                  contDialogOpen("text", `${wrapNumber}-text-${wrapNumber}`)
-                }>
+                onClick={() => contDialogOpen("text", `text-${wrapNumber}`)}>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -164,24 +153,17 @@ const ContentAddux = () => {
             <div className={styles.detailArea}>
               <div className={styles.detailtitle}>
                 {dialogInputData[dialogInfo.inputIdentifier] &&
-                `addThumbWrap-${wrapNumber}-subtext-${wrapNumber}` ===
+                `addThumbWrap-subtext-${wrapNumber}` ===
                   dialogInfo.inputIdentifier
                   ? dialogInputData[dialogInfo.inputIdentifier]
-                  : dialogInputData[
-                        `addThumbWrap-${wrapNumber}-subtext-${wrapNumber}`
-                      ]
-                    ? dialogInputData[
-                        `addThumbWrap-${wrapNumber}-subtext-${wrapNumber}`
-                      ]
+                  : dialogInputData[`addThumbWrap-subtext-${wrapNumber}`]
+                    ? dialogInputData[`addThumbWrap-subtext-${wrapNumber}`]
                     : "App Review"}
               </div>
               <div
                 className={styles.imglayer}
                 onClick={() =>
-                  contDialogOpen(
-                    "subtext",
-                    `${wrapNumber}-subtext-${wrapNumber}`
-                  )
+                  contDialogOpen("subtext", `subtext-${wrapNumber}`)
                 }>
                 <div className={styles.iconBox}>
                   <ModeEdit />
@@ -193,24 +175,17 @@ const ContentAddux = () => {
             <div className={styles.detailArea}>
               <div className={styles.detailtitle}>
                 {dialogInputData[dialogInfo.inputIdentifier] &&
-                `addThumbWrap-${wrapNumber}-detailtext-${wrapNumber}` ===
+                `addThumbWrap-detailtext-${wrapNumber}` ===
                   dialogInfo.inputIdentifier
                   ? dialogInputData[dialogInfo.inputIdentifier]
-                  : dialogInputData[
-                        `addThumbWrap-${wrapNumber}-detailtext-${wrapNumber}`
-                      ]
-                    ? dialogInputData[
-                        `addThumbWrap-${wrapNumber}-detailtext-${wrapNumber}`
-                      ]
+                  : dialogInputData[`addThumbWrap-detailtext-${wrapNumber}`]
+                    ? dialogInputData[`addThumbWrap-detailtext-${wrapNumber}`]
                     : "슈퍼앱은 혁신적인 개념으로, 다양한 서비스를 하나의 플랫폼 또는 앱 내에서 통합하여 제공합니다. 이번 글에서는 슈퍼앱의 개념과 특징, 국내외 주요 슈퍼앱들의 사례를 알아보겠습니다."}
               </div>
               <div
                 className={styles.imglayer}
                 onClick={() =>
-                  contDialogOpen(
-                    "detailtext",
-                    `${wrapNumber}-detailtext-${wrapNumber}`
-                  )
+                  contDialogOpen("detailtext", `detailtext-${wrapNumber}`)
                 }>
                 <div className={styles.iconBox}>
                   <ModeEdit />
@@ -219,8 +194,7 @@ const ContentAddux = () => {
             </div>
           </div>
           {/* 링크 영역 */}
-          {linkVisibility[`addThumbWrap-${wrapNumber}-link-${wrapNumber}`] ==
-          false ? (
+          {linkVisibility[`addThumbWrap-link-${wrapNumber}`] == false ? (
             ""
           ) : (
             <div className={cx(styles.thumbBox, styles.thumb_link)}>
@@ -232,9 +206,7 @@ const ContentAddux = () => {
               />
               <div
                 className={styles.imglayer}
-                onClick={() =>
-                  contDialogOpen("link", `${wrapNumber}-link-${wrapNumber}`)
-                }>
+                onClick={() => contDialogOpen("link", `link-${wrapNumber}`)}>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -243,29 +215,20 @@ const ContentAddux = () => {
                 className={styles.linkDel}
                 variant="contained"
                 onClick={() =>
-                  linkBtnClick(
-                    0,
-                    false,
-                    `addThumbWrap-${wrapNumber}-link-${wrapNumber}`
-                  )
+                  linkBtnClick(0, false, `addThumbWrap-link-${wrapNumber}`)
                 }>
                 <Delete />
                 바로보기 삭제
               </Button>
             </div>
           )}
-          {linkVisibility[`addThumbWrap-${wrapNumber}-link-${wrapNumber}`] ==
-          false ? (
+          {linkVisibility[`addThumbWrap-link-${wrapNumber}`] == false ? (
             <Button
               className={styles.addLinkBtn}
               variant="contained"
               fullWidth
               onClick={() =>
-                linkBtnClick(
-                  1,
-                  true,
-                  `addThumbWrap-${wrapNumber}-link-${wrapNumber}`
-                )
+                linkBtnClick(1, true, `addThumbWrap-link-${wrapNumber}`)
               }>
               <Add />
               바로보기 추가
@@ -279,12 +242,12 @@ const ContentAddux = () => {
             open={
               dialogInfo.open &&
               dialogInfo.inputIdentifier ==
-                `addThumbWrap-${wrapNumber}-${dialogInfo.type}-${wrapNumber}`
+                `addThumbWrap-${dialogInfo.type}-${wrapNumber}`
             }
             onClose={contDialogClose}
             title={`입력하기`}
             inputtype={dialogInfo.type}
-            inputIdentifier={`addThumbWrap-${wrapNumber}-${dialogInfo.type}-${wrapNumber}`}>
+            inputIdentifier={`addThumbWrap-${dialogInfo.type}-${wrapNumber}`}>
             {renderDialogContent()}
           </InputDialog>
         </div>
@@ -301,19 +264,19 @@ const ContentAddux = () => {
               <img
                 src={
                   dialogInputData[dialogInfo.inputIdentifier] &&
-                  `addThumbWrap-1-title-1` === dialogInfo.inputIdentifier
+                  `addThumbWrap-title-1` === dialogInfo.inputIdentifier
                     ? dialogInputData[dialogInfo.inputIdentifier]
-                    : dialogInputData[`addThumbWrap-1-title-1`]
-                      ? dialogInputData[`addThumbWrap-1-title-1`]
-                      : "https://lh3.googleusercontent.com/pw/ADCreHeiaYOn5hRewAHiehlsooUi7e5lNqKq8YlswO-jZhpIZKX_Pg8u4D10PNimm1RIdhfVRLE3YkVJGfO0efu80JkbLErR-myWirFJNnJdCW-Ab4RsDi9s4jvCrYekr3wevoBosROxK5OBivZCkconMgIM=w660-h124-s-no-gm?authuser=1"
+                    : dialogInputData[`addThumbWrap-title-1`]
+                      ? dialogInputData[`addThumbWrap-title-1`]
+                      : "https://lh3.googleusercontent.com/pw/ABLVV850GpnNAedbnHSRV8wKT-EE1QAWTT6AvVHpiOvj0tWB0YL4x3NHfpgxfibMYi7MoVlP6HmdWbi3QXz3F3kVRy42Puy-AIHJDd0EkMtyM8-Lh1AWsSas5eQmUa-xOjxAjYz5irruUgodQTy24pBTdrhc=w660-h75-s-no-gm?authuser=2"
                 }
                 width="660"
-                height="124"
+                height="75"
                 alt=""
               />
               <div
                 className={styles.imglayer}
-                onClick={() => contDialogOpen("title02", `1-addThumbWrap-1`)}>
+                onClick={() => contDialogOpen("title02", `title-1`)}>
                 <div className={styles.iconBox}>
                   <ModeEdit />
                 </div>
@@ -321,12 +284,12 @@ const ContentAddux = () => {
               <InputDialog
                 open={
                   dialogInfo.open &&
-                  dialogInfo.inputIdentifier == `thumbWrap-1-addThumbWrap-1`
+                  dialogInfo.inputIdentifier == `addThumbWrap-title-1`
                 }
                 onClose={contDialogClose}
                 title={`입력하기`}
                 inputtype={dialogInfo.type}
-                inputIdentifier={`addThumbWrap-1-title-1`}>
+                inputIdentifier={`addThumbWrap-title-1`}>
                 {renderDialogContent()}
               </InputDialog>
             </div>
