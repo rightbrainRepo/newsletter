@@ -68,12 +68,12 @@ const Header = () => {
       <div className={styles.header}>
         <div className={styles.toplist}>
           <div className={styles.left}>
-            <a href="https://www.rightbrain.co.kr" target="_blank">
+            <a href="https://www.rightbrain.co.kr/newsletter" target="_blank">
               <img
                 src="https://lh3.googleusercontent.com/pw/ADCreHfBTspu1HOWs-VnKmuYfnmDMq58faVzxMt9IF0ixeRypjq0VV7ugDoTrIdGPN4P8vTqCwBK0GQ4t35mNESOlTguF0hfkYz0UZSDB5fY_IL6485cb5VAlRk31q1zE5KGVzDwSdeDbh2gYULWF-PzjqM=w95-h25-s-no-gm?authuser=2"
                 width="95"
                 height="25"
-                alt=""
+                alt="뉴스레터 구독신청"
               />
             </a>
             <a href="mailto:support@rightbrain.co.kr" target="_blank">
@@ -81,7 +81,7 @@ const Header = () => {
                 src="https://lh3.googleusercontent.com/pw/ADCreHfD1-r9-8B2wD5Aei_bI0Q-ycX_ypCdGrMSdcREyduRtP4YSbxgUIYTz8HfRyTrGYx4l5AfEgArPfXGKgqPNO2625i1j9kpYpfdjNrNtZLK6772AtK3E_GFttmylCdBcTwMQdKOvWFoI-sIsI4E8GQ=w76-h25-s-no-gm?authuser=2"
                 width="76"
                 height="25"
-                alt=""
+                alt="프로젝트 문의"
               />
             </a>
           </div>
@@ -90,7 +90,7 @@ const Header = () => {
               src="https://lh3.googleusercontent.com/pw/ADCreHfdqjWoBaBBUCd9NPlX5wwXEg35vrp8bZU2BWpkWBUtU8TIdlWGj5q4TbL6VbsuTmq0v2mOvJEvupMwkfARH4o9njAQ0IV61kXeCHEzxaA6HwEqmA07ajuLU8lfolmP2eVrRGor3OCky5MDexWRZ9o=w95-h25-s-no-gm?authuser=2"
               width="96"
               height="25"
-              alt=""
+              alt="RightBrain"
             />
           </a>
         </div>
