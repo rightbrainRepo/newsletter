@@ -290,9 +290,9 @@ const ContentUX03 = () => {
                 <div className={styles.right}>
                   <a href={item[1].link} target="_blank">
                     <img
-                      src="https://lh3.googleusercontent.com/pw/ADCreHdXV0BXbMelcz8VPxR7hroFC-hwctmbRi3oS52lgwaMps4dBK24FKmJbTutRTMIMYsG0ghj_vxil1kaoqUSzeeN8yJaa4IpnM1df-OVK-iqY0Te-qRhMKbYhuzjLGkkwzAcpb0JFISLyLc_9LMAfffn=w82-h34-s-no-gm?authuser=1"
-                      width="82"
-                      height="34"
+                      src="https://lh3.googleusercontent.com/pw/AP1GczNvtERcMExNGAr0mh9EWve7WISuQAj49RGWZe3Xfs_IqpLPl1Uvj5HwZesUQ-ybgaAf9t_Y6m1JL6Hc2U4qN1r8t_IWMj9IXXFo9w5WTOVE7rMzybZoGZXxRoNOf9UqPdVpP_ks3QXsgmaLLfsi5Ntv=w134-h53-s-no-gm?authuser=1"
+                      width="134"
+                      height="53"
                       alt=""
                     />
                   </a>

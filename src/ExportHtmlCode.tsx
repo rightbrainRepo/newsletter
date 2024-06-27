@@ -26,8 +26,8 @@ const ExportHtmlCode = (
               </td>
             </tr>
             <tr>
-              <td style="vertical-align:top;">
-                  <div style="margin:0;margin-top: 30px;margin-right: 60px;margin-left: 27px;margin-bottom: 6px;font-family: '맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 18px;font-weight: bold;">
+              <td style="vertical-align:top; background-color:white;">
+                  <div style="margin:0;margin-top: 30px;margin-right: 60px;margin-left: 27px;margin-bottom: 6px;font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 20px;font-weight: bold;">
                   ${
                     dialogInputData[`thumbWrap-text-${i + 1}`]
                       ? dialogInputData[`thumbWrap-text-${i + 1}`]
@@ -37,8 +37,8 @@ const ExportHtmlCode = (
               </td>
             </tr>
             <tr>
-              <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
+              <td style="vertical-align:top; background-color:white;">
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family:'맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
                   ${
                     dialogInputData[`thumbWrap-subtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap-subtext-${i + 1}`]
@@ -48,8 +48,8 @@ const ExportHtmlCode = (
               </td>
             </tr>
             <tr>
-              <td style="vertical-align:top;">
-                  <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:15px;line-height: 26px;">
+              <td style="vertical-align:top; background-color:white;">
+                  <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:16px;line-height: 26px;font-family:'맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;">
                   ${
                     dialogInputData[`thumbWrap-detailtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap-detailtext-${i + 1}`]
@@ -67,7 +67,7 @@ const ExportHtmlCode = (
             <td style="vertical-align:top;">
                 <table width="660" height="34" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                     <tr>
-                        <td style="vertical-align:top;">
+                        <td style="vertical-align:top; background-color:white;width:15px;">
                             <img src="https://lh3.googleusercontent.com/pw/ADCreHcpBcC_XEAGF9W9oB2van5vtAcc7DbqJ2FBm607JW0ogEFSiPubErWeP2KwqBAaW18JYaHCTuX7KF799xWma2YwJPYEFFZkqXY6i1P7RBgErinXzU9NqBxjI8fKpcOimYsjwBI-jNBEBiWH_T0j9SjA=w26-h26-s-no-gm?authuser=1" width="15" height="34" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                         </td>
                         <td style="vertical-align:top;">
@@ -113,7 +113,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-top: 30px;margin-right: 60px;margin-left: 27px;margin-bottom: 6px;font-family: '맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 18px;font-weight: bold;">
+                  <div style="margin:0;margin-top: 30px;margin-right: 60px;margin-left: 27px;margin-bottom: 6px;font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 20px;font-weight: bold;">
                   ${
                     dialogInputData[`thumbWrap02-text-${i + 1}`]
                       ? dialogInputData[`thumbWrap02-text-${i + 1}`]
@@ -124,7 +124,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">${
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family:'맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">${
                     dialogInputData[`thumbWrap02-subtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap02-subtext-${i + 1}`]
                       : "App Review"
@@ -133,7 +133,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:15px;line-height: 26px;">
+                  <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:16px;line-height: 26px; font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;">
                   ${
                     dialogInputData[`thumbWrap02-detailtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap02-detailtext-${i + 1}`]
@@ -196,7 +196,7 @@ const ExportHtmlCode = (
     </tr>
     <tr>
         <td style="vertical-align:top;">
-            <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 30px;margin-bottom: 6px;font-family:  '맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 18px;font-weight: bold;">
+            <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 30px;margin-bottom: 6px;font-family:  '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 20px;font-weight: bold;">
             ${
               dialogInputData["thumbWrap03-text-1"]
                 ? dialogInputData["thumbWrap03-text-1"]
@@ -207,7 +207,7 @@ const ExportHtmlCode = (
     </tr>
     <tr>
         <td style="vertical-align:top;">
-            <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family:  'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
+            <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
             ${
               dialogInputData["thumbWrap03-subtext-1"]
                 ? dialogInputData["thumbWrap03-subtext-1"]
@@ -218,7 +218,7 @@ const ExportHtmlCode = (
     </tr>
     <tr>
         <td style="vertical-align:top;">
-            <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:15px;line-height: 26px;">
+            <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:16px;line-height: 26px;">
             ${
               dialogInputData["thumbWrap03-detailtext-1"]
                 ? dialogInputData["thumbWrap03-detailtext-1"]
@@ -243,22 +243,41 @@ const ExportHtmlCode = (
       "https://blog.rightbrain.co.kr",
       "https://blog.rightbrain.co.kr"
     ];
+    thumbWrapsHtml += `
+    <tr>
+        <td style="vertical-align:top;">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczMwzfoiZmRjmI5WdMiY62tSmAe-ukR4KL8k5bVFErpit6ZsQp2LOqBePZpu_dThQC3lmkejYVhibrXNHnbx73bcjyavPa43H9TZPXL8W1pPIoZX4OUNf5UxagkqOm2_60JWAJ_qRd43FGJWJDmSdgqK=w660-h37-s-no-gm?authuser=1" width="660" height="37" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+        </td>
+    </tr>`;
+    if (thumbWrapsCountPart3 > 1) {
+        thumbWrapsHtml += `
+        <tr>
+            <td style="vertical-align:top; font-size:0;">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczPcfoi9GVd6gv9G0xlkkHugbUoaVajIQTVIlKmLQ1JwXVeiRXP4d0qshSj8s3AvSj-sRXmusalqTOwil3acbIz0_BZRpyaqv7C_xE3eMVHRKf1SyN-jYqPmz1SmzaaZMrz9T9Sab7Zrk_eHcSIMOKyT=w660-h24-s-no-gm?authuser=1" width="660" height="6" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+            </td>
+        </tr>
+        `;
+    }
     for (let i = 0; i < thumbWrapsCountPart3; i++) {
       thumbWrapsHtml += `
     <tr>
         <td style="vertical-align:top;">
             <table width="660" align="left" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
-                <tr>
-                    <td style="vertical-align:top;">
-                        <img src="https://lh3.googleusercontent.com/pw/ADCreHfizVvAXxXDO6l763GmZ6qhnTkDL5mi_RmDbwxY3RWEf5MK8gshbcb7NfZqhnLP6mfYPDnL6bYK8thtXxhKkwSFvoIp6NUjmG7p_4k7k-btSvlOiIqaRhUaD90hdvS1F3h3V5RezHgcJVkhlgqHNl4t=w660-h39-s-no-gm?authuser=1" width="660" height="39" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
-                    </td>
-                </tr>
+                ${ i>0 ? 
+                    `
+                    <tr>
+                        <td style="vertical-align:top;">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPcfoi9GVd6gv9G0xlkkHugbUoaVajIQTVIlKmLQ1JwXVeiRXP4d0qshSj8s3AvSj-sRXmusalqTOwil3acbIz0_BZRpyaqv7C_xE3eMVHRKf1SyN-jYqPmz1SmzaaZMrz9T9Sab7Zrk_eHcSIMOKyT=w660-h24-s-no-gm?authuser=1" width="660" height="24" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                        </td>
+                    </tr>
+                    ` : ""
+                }             
                 <tr>
                     <td style="vertical-align:top;">
                         <table width="660" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                             <tr>
-                                <td style="vertical-align:top;" width="552">
-                                    <div style="margin:0;letter-spacing:-2px;margin-left:27px;font-family:  '맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 15px;font-weight: bold;line-height: 35px">
+                                <td style="vertical-align:middle;" width="500">
+                                    <div style="margin:0;letter-spacing:-0.5px;margin-left:27px;font-family:  '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 18px;font-weight: bold;line-height: 35px">
                                     ${
                                       dialogInputData[
                                         `listTextWrap-listText-${i + 1}`
@@ -281,10 +300,10 @@ const ExportHtmlCode = (
                                           ]
                                         : listLink[i]
                                     }
-                                     target="_blank"><img src="https://lh3.googleusercontent.com/pw/ADCreHdXV0BXbMelcz8VPxR7hroFC-hwctmbRi3oS52lgwaMps4dBK24FKmJbTutRTMIMYsG0ghj_vxil1kaoqUSzeeN8yJaa4IpnM1df-OVK-iqY0Te-qRhMKbYhuzjLGkkwzAcpb0JFISLyLc_9LMAfffn=w82-h34-s-no-gm?authuser=1" width="82" height="34" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
+                                     target="_blank"><img src="https://lh3.googleusercontent.com/pw/AP1GczNvtERcMExNGAr0mh9EWve7WISuQAj49RGWZe3Xfs_IqpLPl1Uvj5HwZesUQ-ybgaAf9t_Y6m1JL6Hc2U4qN1r8t_IWMj9IXXFo9w5WTOVE7rMzybZoGZXxRoNOf9UqPdVpP_ks3QXsgmaLLfsi5Ntv=w134-h53-s-no-gm?authuser=1" width="134" height="53" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
                                 </td>
                                 <td style="vertical-align:top;">
-                                    <img src="https://lh3.googleusercontent.com/pw/ADCreHcpBcC_XEAGF9W9oB2van5vtAcc7DbqJ2FBm607JW0ogEFSiPubErWeP2KwqBAaW18JYaHCTuX7KF799xWma2YwJPYEFFZkqXY6i1P7RBgErinXzU9NqBxjI8fKpcOimYsjwBI-jNBEBiWH_T0j9SjA=w26-h26-s-no-gm?authuser=1" width="26" height="35" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+                                    <img src="https://lh3.googleusercontent.com/pw/ADCreHcpBcC_XEAGF9W9oB2van5vtAcc7DbqJ2FBm607JW0ogEFSiPubErWeP2KwqBAaW18JYaHCTuX7KF799xWma2YwJPYEFFZkqXY6i1P7RBgErinXzU9NqBxjI8fKpcOimYsjwBI-jNBEBiWH_T0j9SjA=w26-h26-s-no-gm?authuser=1" width="26" height="53" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                                 </td>
                             </tr>
                         </table>
@@ -296,6 +315,22 @@ const ExportHtmlCode = (
    
 `;
     }
+    
+    if (thumbWrapsCountPart3 > 1) {
+        thumbWrapsHtml += `
+        <tr>
+            <td style="vertical-align:top; font-size:0;">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczPcfoi9GVd6gv9G0xlkkHugbUoaVajIQTVIlKmLQ1JwXVeiRXP4d0qshSj8s3AvSj-sRXmusalqTOwil3acbIz0_BZRpyaqv7C_xE3eMVHRKf1SyN-jYqPmz1SmzaaZMrz9T9Sab7Zrk_eHcSIMOKyT=w660-h24-s-no-gm?authuser=1" width="660" height="6" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+            </td>
+        </tr>
+        `;
+    }
+    thumbWrapsHtml += `
+    <tr>
+        <td style="vertical-align:top;">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczMwzfoiZmRjmI5WdMiY62tSmAe-ukR4KL8k5bVFErpit6ZsQp2LOqBePZpu_dThQC3lmkejYVhibrXNHnbx73bcjyavPa43H9TZPXL8W1pPIoZX4OUNf5UxagkqOm2_60JWAJ_qRd43FGJWJDmSdgqK=w660-h37-s-no-gm?authuser=1" width="660" height="37" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
+        </td>
+    </tr>`;
 
     return thumbWrapsHtml;
   };
@@ -318,7 +353,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-top: 30px;margin-right: 60px;margin-left: 27px;margin-bottom: 6px;font-family: '맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 18px;font-weight: bold;">
+                  <div style="margin:0;margin-top: 30px;margin-right: 60px;margin-left: 27px;margin-bottom: 6px;font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 20px;font-weight: bold;">
                   ${
                     dialogInputData[`thumbWrap04-text-${i + 1}`]
                       ? dialogInputData[`thumbWrap04-text-${i + 1}`]
@@ -329,7 +364,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">
                   ${
                     dialogInputData[`thumbWrap04-subtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap04-subtext-${i + 1}`]
@@ -339,7 +374,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:15px;line-height: 26px;">
+                  <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:16px;line-height: 26px;">
                   ${
                     dialogInputData[`thumbWrap04-detailtext-${i + 1}`]
                       ? dialogInputData[`thumbWrap04-detailtext-${i + 1}`]
@@ -404,7 +439,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-top: 30px;margin-right: 60px;margin-left: 27px;margin-bottom: 6px;font-family: '맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 18px;font-weight: bold;">
+                  <div style="margin:0;margin-top: 30px;margin-right: 60px;margin-left: 27px;margin-bottom: 6px;font-family: '맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 20px;font-weight: bold;">
                   ${
                     dialogInputData[`addThumbWrap-text-${i + 1}`]
                       ? dialogInputData[`addThumbWrap-text-${i + 1}`]
@@ -415,7 +450,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family: 'Georgia','맑은고딕', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">${
+                  <div style="margin:0;margin-right: 60px;margin-left: 27px;margin-top: 6px;font-family:'맑은 고딕', 'Malgun Gothic', 'Apple SD Gothic Neo','Noto Sans KR', sans-serif;font-size: 13px;color:#0047FF;">${
                     dialogInputData[`addThumbWrap-subtext-${i + 1}`]
                       ? dialogInputData[`addThumbWrap-subtext-${i + 1}`]
                       : "App Review"
@@ -424,7 +459,7 @@ const ExportHtmlCode = (
             </tr>
             <tr>
               <td style="vertical-align:top;">
-                  <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:15px;line-height: 26px;">
+                  <div style="letter-spacing:-0.5px;font-weight:500;margin-left: 27px;margin-top: 15px;margin-right: 60px;margin-bottom: 20px;color:#000;font-size:16px;line-height: 26px;">
                   ${
                     dialogInputData[`addThumbWrap-detailtext-${i + 1}`]
                       ? dialogInputData[`addThumbWrap-detailtext-${i + 1}`]
@@ -482,7 +517,7 @@ const ExportHtmlCode = (
               <title>뉴스레터</title>
           </head>
           <body style="margin:0;padding:0;">
-              <table width="680"  align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+              <table width="660"  align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
                   <tr>
                       <td  align="center">
                           <table width="660" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
@@ -507,7 +542,7 @@ const ExportHtmlCode = (
                                                   <img src="https://lh3.googleusercontent.com/pw/ADCreHcSSJH1pOVr29DPeW2JrBFWEkVIMjZ0YqRJmjVYD7g8K-ky60PmfSm1PaPHb916mgjhq5s5-3dFQbhgTxlhKp5RfcYzwhA4ryFCVmOEqLGnpfZj9RC3Pr68D1GCbTdKPvZz2znMbRYE1OVvQYyon2M=w27-h25-s-no-gm?authuser=2" width="35" height="25" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                                               </td>
                                               <td style="vertical-align:top;">
-                                                  <a href="mailto:support@rightbrain.co.kr" target="_blank"><img src="https://lh3.googleusercontent.com/pw/ADCreHfD1-r9-8B2wD5Aei_bI0Q-ycX_ypCdGrMSdcREyduRtP4YSbxgUIYTz8HfRyTrGYx4l5AfEgArPfXGKgqPNO2625i1j9kpYpfdjNrNtZLK6772AtK3E_GFttmylCdBcTwMQdKOvWFoI-sIsI4E8GQ=w76-h25-s-no-gm?authuser=2" width="76" height="25" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
+                                                  <a href="mailto:contact@rightbrain.co.kr" target="_blank"><img src="https://lh3.googleusercontent.com/pw/ADCreHfD1-r9-8B2wD5Aei_bI0Q-ycX_ypCdGrMSdcREyduRtP4YSbxgUIYTz8HfRyTrGYx4l5AfEgArPfXGKgqPNO2625i1j9kpYpfdjNrNtZLK6772AtK3E_GFttmylCdBcTwMQdKOvWFoI-sIsI4E8GQ=w76-h25-s-no-gm?authuser=2" width="76" height="25" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
                                               </td>
                                               <td style="vertical-align:top;">
                                                   <img src="https://lh3.googleusercontent.com/pw/ADCreHc8Skjx2NrbikVldsc57KTeOS7tbO4zQw9zbrB5Ka80HLciKgIIBJr49m1NkcSiiPcip-Q0vkKuu58ivLMYwXJ0NEWg6HiyEgoD0vcM8ZISdOT6Ldj5G8Tr9LUZmX0tLNi2rTTzu-Of3FjuWeyO1YY=w307-h25-s-no-gm?authuser=2" width="307" height="25" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
@@ -602,11 +637,6 @@ const ExportHtmlCode = (
                   ${renderThumbWraps03()}
                   <tr>
                     <td style="vertical-align:top;">
-                        <img src="https://lh3.googleusercontent.com/pw/ADCreHfizVvAXxXDO6l763GmZ6qhnTkDL5mi_RmDbwxY3RWEf5MK8gshbcb7NfZqhnLP6mfYPDnL6bYK8thtXxhKkwSFvoIp6NUjmG7p_4k7k-btSvlOiIqaRhUaD90hdvS1F3h3V5RezHgcJVkhlgqHNl4t=w660-h39-s-no-gm?authuser=1" width="660" height="39" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="vertical-align:top;">
                         <img src="https://lh3.googleusercontent.com/pw/ADCreHcoWEawOSTThj_8XEw3riAWm1j1s4HfDTKlcQm8AlcXa65gkku7J44Pn7hir-QO7BIxO7yXMzrJfA_ydilrj39901FwoqhnYilKFGrz6CmqVe5vMUyRQjnit4mK5DP3ddoA85xL8ycUdmVn9_tWFI2b=w660-h70-s-no-gm?authuser=1" width="660" height="70" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                     </td>
                  </tr>
@@ -648,7 +678,7 @@ const ExportHtmlCode = (
                                                   <img src="https://lh3.googleusercontent.com/pw/ADCreHeGFiQLFUtkn2zuLFfrS_P_Vps7CDmobvFwczHp1M5k_0L_NcaPTLYdy7iQkqUhHWoRI1MYkFThl0wNrcnWcNyeka1ztTNzem6AKJLGUCtMf2Dt_Srd7mLpElvz0w22zwbZnYxaCn9S2oBojCsaHeIy=w26-h40-s-no-gm?authuser=1" width="26" height="27" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                                               </td>
                                               <td style="vertical-align:top;">
-                                                  <a href="mailto:support@rightbrain.co.kr" target="_blank"><img src="https://lh3.googleusercontent.com/pw/ADCreHcsqFWti0e9kvQ2jcXsejnwhR8sKhTXPka8QG70qE0liApmllBziR041CqVqQcybmm9WSyIDob2qldnDLygZ74JEW1PBS_RlX8V14aAbti4uwO5nZQxGCtPXe10F1pjqcOjTKYbHnA_D-H6UlnVBWk=w229-h27-s-no-gm?authuser=2" width="229" height="27" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
+                                                  <a href="mailto:contact@rightbrain.co.kr" target="_blank"><img src="https://lh3.googleusercontent.com/pw/AP1GczP2uZ1T8pjeKZ3ePdskDnD-0mjomI102xow0cHydLKQj8Pv1QwzHQeExs0xQ3uqW3wlG8Ynkamkpte4ts1WAalWZ9JgrGqLkbb27TIuIFBSk1TlFckW0ZsSS4_DgW66AC3oSGnhKHp0Gv0iKgVAhX_k=w229-h27-s-no-gm?authuser=1" width="229" height="27" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
                                               </td>
                                               <td style="vertical-align:top;">
                                                   <img src="https://lh3.googleusercontent.com/pw/ADCreHchjH6KWyoWfNkssJrSf0aL-ekiy5vE9vGpvyzCnlX63Uy4muBRpX1PZlasiDvkorV1gxseOEG8pDe7k1dZk45vQqbtjZ5oZPTtA0TA_bEl_-7TNqBQ7cnM_Z74-O8cF2ixclepdfK1JZnmQZEDMKE=w402-h27-s-no-gm?authuser=2" width="405" height="27" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
@@ -670,7 +700,7 @@ const ExportHtmlCode = (
                                                   <img src="https://lh3.googleusercontent.com/pw/ADCreHeGFiQLFUtkn2zuLFfrS_P_Vps7CDmobvFwczHp1M5k_0L_NcaPTLYdy7iQkqUhHWoRI1MYkFThl0wNrcnWcNyeka1ztTNzem6AKJLGUCtMf2Dt_Srd7mLpElvz0w22zwbZnYxaCn9S2oBojCsaHeIy=w26-h40-s-no-gm?authuser=1" width="30" height="71" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                                               </td>
                                               <td style="vertical-align:top;">
-                                                  <a href="mailto:support@rightbrain.co.kr" target="_blank"><img src="https://lh3.googleusercontent.com/pw/ADCreHdnaYyM7iVKApgSLG1kCkEWeDXUFjIF3hn6fMbc-Sz9TGH61HgVRG-MKwUOcJp7qzd2c7q2CgxmpxX-s94iu9OBuWVxB3Z6yrkc-ISzIfOOBP-FoPQmH1-up_dnfZVcp6G6rQkff3Qc1qsDkVcoarA=w150-h71-s-no-gm?authuser=2" width="150" height="71" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
+                                                  <a href="mailto:contact@rightbrain.co.kr" target="_blank"><img src="https://lh3.googleusercontent.com/pw/ADCreHdnaYyM7iVKApgSLG1kCkEWeDXUFjIF3hn6fMbc-Sz9TGH61HgVRG-MKwUOcJp7qzd2c7q2CgxmpxX-s94iu9OBuWVxB3Z6yrkc-ISzIfOOBP-FoPQmH1-up_dnfZVcp6G6rQkff3Qc1qsDkVcoarA=w150-h71-s-no-gm?authuser=2" width="150" height="71" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
                                               </td>
                                               <td style="vertical-align:top;">
                                                   <img src="https://lh3.googleusercontent.com/pw/ADCreHeF-mmWK8lBy7qifWLzAYf6IPiQLVBl69LfBEfCeXEc2vEhbZ_7Jb68Tsgch08VoNaSuPsrFuSNDI0wgKvKFVTwyzhWL5fA-jjq8l_gRyVQHcfB52Mz4tV1PqZ-MzLnBCD8mlhI1dJgSZWyC-KXku8=w480-h71-s-no-gm?authuser=2" width="480" height="71" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
@@ -715,7 +745,7 @@ const ExportHtmlCode = (
                                                   <img src="https://lh3.googleusercontent.com/pw/ADCreHeGFiQLFUtkn2zuLFfrS_P_Vps7CDmobvFwczHp1M5k_0L_NcaPTLYdy7iQkqUhHWoRI1MYkFThl0wNrcnWcNyeka1ztTNzem6AKJLGUCtMf2Dt_Srd7mLpElvz0w22zwbZnYxaCn9S2oBojCsaHeIy=w26-h40-s-no-gm?authuser=1" width="26" height="39" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />
                                               </td>
                                               <td style="vertical-align:top;font-size:0;line-height:initial;">
-                                                  <a href="https://drive.google.com/uc?export=view&id=1lins3yx66-kqTOC3SjyziKscBbNTV5TD"  target="_blank"><img src="https://lh3.googleusercontent.com/pw/ADCreHdPnEJy5fS0aW0y_4M2PHOj4LAuHRdJS-VYBggZ2x4i709JxB_2DJdz3Jm4bQX84xcq11CNJGcMQD0P9fbG9BGouqdR_ijaanjdS7aawopAp6Kn-39rkvjznjjOqjYZt_j1fPF2Cf2R4OtgndC3iD5h=w155-h39-s-no-gm?authuser=1" width="155" height="39" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
+                                                  <a href="https://www.rightbrain.co.kr/download_company/"  target="_blank"><img src="https://lh3.googleusercontent.com/pw/ADCreHdPnEJy5fS0aW0y_4M2PHOj4LAuHRdJS-VYBggZ2x4i709JxB_2DJdz3Jm4bQX84xcq11CNJGcMQD0P9fbG9BGouqdR_ijaanjdS7aawopAp6Kn-39rkvjznjjOqjYZt_j1fPF2Cf2R4OtgndC3iD5h=w155-h39-s-no-gm?authuser=1" width="155" height="39" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" /></a>
                                               </td>
                                               <td style="vertical-align:top;font-size:0;line-height:initial;">
                                                   <img src="https://lh3.googleusercontent.com/pw/ADCreHeQ6Ak3JmTebRV0gdqfImHr6TQZSjQFTJQYgYEKlxVsjzhVzo5EwJuqGhcDZlJiqFmDadst8HauL_3L31yNHoiaPkPCLlhs2c0fcj1EiXaipnZoW54iv-BEbuUNwd_4koTWvIYt-9z221oiFP6f6raI=w192-h39-s-no-gm?authuser=1" width="75" height="39" hspace="0" vspace="0" border="0" align="absmiddle" alt="" style="display:block; vertical-align:top;" />

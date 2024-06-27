@@ -76,7 +76,7 @@ const Header = () => {
                 alt="뉴스레터 구독신청"
               />
             </a>
-            <a href="mailto:support@rightbrain.co.kr" target="_blank">
+            <a href="mailto:contact@rightbrain.co.kr" target="_blank">
               <img
                 src="https://lh3.googleusercontent.com/pw/ADCreHfD1-r9-8B2wD5Aei_bI0Q-ycX_ypCdGrMSdcREyduRtP4YSbxgUIYTz8HfRyTrGYx4l5AfEgArPfXGKgqPNO2625i1j9kpYpfdjNrNtZLK6772AtK3E_GFttmylCdBcTwMQdKOvWFoI-sIsI4E8GQ=w76-h25-s-no-gm?authuser=2"
                 width="76"

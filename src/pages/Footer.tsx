@@ -11,9 +11,9 @@ const Footer = () => {
           alt=""
         />
         <div className={styles.support}>
-          <a href="mailto:support@rightbrain.co.kr" target="_blank">
+          <a href="mailto:contact@rightbrain.co.kr" target="_blank">
             <img
-              src="https://lh3.googleusercontent.com/pw/ADCreHcsqFWti0e9kvQ2jcXsejnwhR8sKhTXPka8QG70qE0liApmllBziR041CqVqQcybmm9WSyIDob2qldnDLygZ74JEW1PBS_RlX8V14aAbti4uwO5nZQxGCtPXe10F1pjqcOjTKYbHnA_D-H6UlnVBWk=w229-h27-s-no-gm?authuser=2"
+              src="https://lh3.googleusercontent.com/pw/AP1GczP2uZ1T8pjeKZ3ePdskDnD-0mjomI102xow0cHydLKQj8Pv1QwzHQeExs0xQ3uqW3wlG8Ynkamkpte4ts1WAalWZ9JgrGqLkbb27TIuIFBSk1TlFckW0ZsSS4_DgW66AC3oSGnhKHp0Gv0iKgVAhX_k=w229-h27-s-no-gm?authuser=1"
               width="229"
               height="27"
               alt=""
@@ -21,7 +21,7 @@ const Footer = () => {
           </a>
         </div>
         <div className={styles.projectMail}>
-          <a href="mailto:support@rightbrain.co.kr" target="_blank">
+          <a href="mailto:contact@rightbrain.co.kr" target="_blank">
             <img
               src="https://lh3.googleusercontent.com/pw/ADCreHdnaYyM7iVKApgSLG1kCkEWeDXUFjIF3hn6fMbc-Sz9TGH61HgVRG-MKwUOcJp7qzd2c7q2CgxmpxX-s94iu9OBuWVxB3Z6yrkc-ISzIfOOBP-FoPQmH1-up_dnfZVcp6G6rQkff3Qc1qsDkVcoarA=w150-h71-s-no-gm?authuser=2"
               width="150"
