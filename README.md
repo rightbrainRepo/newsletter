@@ -2,7 +2,7 @@
 
 뉴스레터 html 코딩 내보내기 페이지
 
-link : https://rightbrainlib.github.io/newsletter/
+link : https://rightbrainrepo.github.io/newsletter/
 
 <주의사항>
 
