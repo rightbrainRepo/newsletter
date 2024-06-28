@@ -1,0 +1,30 @@
+.InputDialogWrap {
+    position: relative;
+    .alert {
+        margin: 0 20px;
+        font-size: 14px;
+        p{
+            margin: 0;
+            font-weight: 700;
+        }
+        .list {
+            margin-top: 10px;
+        }
+    }
+    .contBtn {
+        padding: 20px;
+        justify-content: end;
+        button {
+            width: 100px;
+            height: 40px;
+        }
+    }
+    .closeBtn {
+        position:absolute;
+        top: 7px;
+        right: 13px;
+        svg {
+            font-size: 28px;
+        }
+    }
+}

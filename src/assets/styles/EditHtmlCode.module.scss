@@ -1,0 +1,25 @@
+.wrap {
+    width: 680px;
+    margin: 30px auto 0 auto;
+    background-color: rgba(243, 246, 249, 1);
+    .topBtn {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: rgba(243, 246, 249, 1);
+        padding: 10px 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+       // justify-content: end;
+        padding: 20px;
+        button + button {
+            margin-left: 7px;
+        }
+    }
+    .inner {
+        width: 660px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+}
